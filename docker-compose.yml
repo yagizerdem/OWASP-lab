@@ -30,4 +30,4 @@ networks:
   env_net: {}
 
 volumes:
-  sqlserverdata: # external: true
+  sqlserverdata: 
