@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2025-latest
+    container_name: sqlserver
+    environment:
+      MSSQL_PID: "developer" # Use the developer edition of SQL Server
+      ACCEPT_EULA: "Y"
+      DB_USER: "sa"
+      MSSQL_SA_PASSWORD: "12345aA!"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserverdata:/var/opt/mssql
+    networks:
+      - env_net
+
+  adminer:
+    depends_on:
+      - sqlserver
+    image: adminer
+    restart: always
+    networks:
+      - env_net
+    ports:
+      - 8080:8080
+
+networks:
+  env_net: {}
+
+volumes:
+  sqlserverdata: # external: true
