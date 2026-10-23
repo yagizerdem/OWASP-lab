@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.OpenApi;
-
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -13,9 +11,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddOpenApi("OWASP-lab-API", options =>
 {
   options.ShouldInclude = (description) =>
-  {
-    return description.RelativePath != null && description.RelativePath.StartsWith("lab/");
-  };
+    {
+      return description.RelativePath != null && description.RelativePath.StartsWith("lab/");
+    };
 });
 
 var app = builder.Build();
