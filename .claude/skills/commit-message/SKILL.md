@@ -10,25 +10,16 @@ description: Create git commit messages based on current staged changes. Has sup
 When this skill is invoked, follow these steps:
 
 1. **Check if there are staged changes**: Run `git status`
-2. If the output of `git status` contains `Changes not staged for commit`, then:
-   - Generate an interactive yes/no prompt artifact asking "You have unstaged changes. Would you like me to stage your changes?"
-   - Upon confirmation, proceed by adding the staged changes
+2. If the output of `git status` contains `Changes not staged for commit`, do NOT ask. Only commit what is already staged and leave unstaged changes untouched (stage files only if nothing is staged).
 3. If the output of `git status` contains `nothing to commit, working tree clean`, then:
    - Display response to the user: "No changes found. Please make changes to your files before trying to commit."
    - Stop and exit the skill.
-4. Only proceed if all changes have been staged, and there are no unstaged changes.
+4. Proceed with the staged changes without asking any questions.
 5. Get details of staged changes: Run `git diff --cached` to get the details of the staged changes. Review the diff output to understand:
    - What files were modified
    - What functionality changed
    - The purpose and impact of the changes
-6. **Check current branch**: Run `git branch --show-current` to determine the current branch.
-   - If the current branch is `main` or `master` or `dev` or `development`:
-     - Using the staged changes already retrieved in step 5, determine the appropriate branch type and a short task description
-     - Generate a branch name in the format `<type>/<task-description>` (see **Branch Naming Format** section below). Be specific rather than generic in branch name, ie `feature/switch-to-branch` instead of `feature/update-commit-skill`
-     - Inform the user they are committing directly to the mainline branch
-     - Generate an interactive yes/no prompt artifact asking "You're on the `<branch>` branch. Would you like me to create the branch `<suggested-branch-name>` for this commit?" with the suggested branch name filled in
-     - Upon confirmation, create and switch to the new branch using `git switch -c <branch-name>`
-     - If the user declines, continue committing on the current branch
+6. **Check current branch**: Run `git branch --show-current`. Do NOT ask about creating a new branch or warn about mainline branches; commit on the current branch, including `main`, `master`, `dev` or `development`.
 7. Determine emoji usage:
    - Search the user's original request for keywords like "emoji", "gitmoji", "with emoji", or "use emoji"
    - By default (if no emoji keywords found): Generate the commit message in standard format WITHOUT any emojis
@@ -40,21 +31,8 @@ When this skill is invoked, follow these steps:
    - Clear, imperative subject line under 50 characters
    - Body and footer if needed for complex changes
    - Add line breaks in the body if there are multiple sentences.
-9. Present to user for commit approval:
-   - Display the formatted commit message for review (without showing the git command)
-   - Generate an interactive yes/no prompt artifact asking "Would you like me to create this commit?"
-   - Upon confirmation, proceed to step 10
-10. **Final branch check before committing**: Run `git branch --show-current` one final time before executing the commit.
-    - If the current branch is still `main` or `master` or `dev` or `development`:
-      - Warn the user: "You are about to commit directly to `<branch>`. Are you sure?"
-      - Generate an interactive yes/no prompt artifact asking "Commit directly to `<branch>`?"
-      - Upon confirmation, proceed to create the commit
-      - If the user declines, stop and ask them to create a new branch before committing
-    - If the current branch is not a mainline branch, proceed to create the commit
-11. Present to user for push confirmation:
-
-- Once the commit is created, generate an interactive yes/no prompt asking "Would you like me to push this to the remote?"
-- Upon confirmation, proceed with the push operation
+9. **Commit immediately**: Do not ask for approval or confirmation. Run `git commit` right away with the generated message, then show the resulting commit message to the user.
+10. **Do not push**: Never run `git push` unless the user explicitly asks for it. Do not ask whether to push.
 
 ## Commands to get details of staged changes
 
@@ -217,10 +195,10 @@ When generating commit messages, follow these rules:
 
 ## Output Format
 
-When presenting the generated commit message to the user, use this format:
+After committing, present the committed message to the user in this format:
 
 ```markdown
-Here's the suggested commit message based on your staged changes:
+Committed with the following message:
 
 ​`
 <generated commit message>
@@ -229,6 +207,6 @@ Here's the suggested commit message based on your staged changes:
 
 ## Important Notes
 
-- Do not run `git commit` or `git push` without user approval
+- Run `git commit` directly without asking for approval or confirmation; never run `git push` unless the user explicitly asks
 - Do not add Co-Authored-By trailers: Commits should only show the user as the author. Never add "Co-Authored-By: Claude Sonnet <noreply@anthropic.com>" or any similar co-author trailers to commit messages
 - Analyze all staged files: If there are many staged files, review each one to ensure the commit message accurately reflects all changes
