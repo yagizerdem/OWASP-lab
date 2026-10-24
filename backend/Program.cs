@@ -22,7 +22,6 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
-SeedUser.Seed(builder.Services.BuildServiceProvider().GetRequiredService<AppDbContext>());
 
 var app = builder.Build();
 

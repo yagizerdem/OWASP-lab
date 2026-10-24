@@ -27,7 +27,6 @@ public class WeatherForecastController : ControllerBase
     })
     .ToArray();
 
-
     if (Random.Shared.Next(0, 2) == 1)
     {
       return NotFound();
