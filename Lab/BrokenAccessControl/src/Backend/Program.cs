@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -26,8 +27,26 @@ var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 {
-  var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-  SeedUser.Seed(db, SeedUser.GenerateRandomUsers(100));
+
+  var path = Path.Combine(
+    builder.Environment.ContentRootPath,
+    "Data",
+    "dummy.users.json"
+  );
+
+  var json = await File.ReadAllTextAsync(path);
+
+  var users = JsonConvert.DeserializeObject<List<UserEntity>>(json, new JsonSerializerSettings
+  {
+    MissingMemberHandling = MissingMemberHandling.Ignore,
+    NullValueHandling = NullValueHandling.Ignore,
+  });
+
+  if (users != null && users.Count > 0)
+  {
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    SeedUser.Seed(db, users);
+  }
 }
 
 

@@ -1,5 +1,10 @@
 <Solution>
+  <Folder Name="/Lab/" />
+  <Folder Name="/Lab/BrokenAccessControl/" />
+  <Folder Name="/Lab/BrokenAccessControl/src/" />
+  <Folder Name="/Lab/BrokenAccessControl/src/Scripts/"/>
   <Project Path="Lab/BrokenAccessControl/src/Backend/Backend.csproj" />
   <Project Path="Lab/BrokenAccessControl/src/Context/Context.csproj" />
   <Project Path="Lab/BrokenAccessControl/src/Models/Models.csproj" />
+  <Project Path="Lab/BrokenAccessControl/src/Scripts/DummyUser/DummyUser.csproj" />
 </Solution>
