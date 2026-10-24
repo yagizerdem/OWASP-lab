@@ -1,6 +1,6 @@
 <Solution>
-  <Project Path="Lab/BrokenAccessControl/Backend/Backend.csproj" />
-  <Project Path="Lab/BrokenAccessControl/Context/Context.csproj" />
-  <Project Path="Lab/BrokenAccessControl/Models/Models.csproj" />
-  <Project Path="Lab/BrokenAccessControl/Seeders/Seeders.csproj" />
+  <Project Path="Lab/BrokenAccessControl/src/Backend/Backend.csproj" />
+  <Project Path="Lab/BrokenAccessControl/src/Context/Context.csproj" />
+  <Project Path="Lab/BrokenAccessControl/src/Models/Models.csproj" />
+  <Project Path="Lab/BrokenAccessControl/src/Seeders/Seeders.csproj" />
 </Solution>
