@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -26,8 +27,11 @@ var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 {
-  var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-  SeedUser.Seed(db, SeedUser.GenerateRandomUsers(100));
+
+  SeedUser.Seed(scope.ServiceProvider.GetRequiredService<AppDbContext>());
+  SeedBankAccount.Seed(scope.ServiceProvider.GetRequiredService<AppDbContext>());
+
+
 }
 
 

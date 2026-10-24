@@ -22,4 +22,6 @@ public class UserEntity : BaseEntity
   /// </summary>
   [Required]
   public string Email { get; set; } = null!;
+
+  public List<BankAccountEntity> BankAccounts { get; set; } = new List<BankAccountEntity>();
 }
