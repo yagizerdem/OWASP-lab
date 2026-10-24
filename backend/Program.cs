@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -15,6 +17,12 @@ builder.Services.AddOpenApi("OWASP-lab-API", options =>
       return description.RelativePath != null && description.RelativePath.StartsWith("lab/");
     };
 });
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
+SeedUser.Seed(builder.Services.BuildServiceProvider().GetRequiredService<AppDbContext>());
 
 var app = builder.Build();
 
