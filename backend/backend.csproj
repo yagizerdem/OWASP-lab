@@ -23,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Context\Context.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
+    <ProjectReference Include="..\Seeders\Seeders.csproj" />
   </ItemGroup>
 
 </Project>

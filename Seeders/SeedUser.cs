@@ -1,22 +1,33 @@
+using System.Collections.Frozen;
+
 public class SeedUser
 {
   public static void Seed(AppDbContext context)
   {
     if (!context.Users.Any())
     {
-      context.Users.Add(new UserEntity
-      {
-        Username = "admin",
-        Password = "admin123",
-        Email = "admin@example.com",
-        CreatedAt = DateTime.UtcNow,
-        UpdatedAt = DateTime.UtcNow
-
-      });
+      context.Users.Add(GenerateRandomUsers(1).First());
       context.SaveChanges();
     }
   }
 
+  public static void Seed(AppDbContext context, UserEntity entity)
+  {
+    if (!context.Users.Any())
+    {
+      context.Users.Add(entity);
+      context.SaveChanges();
+    }
+  }
+
+  public static void Seed(AppDbContext context, List<UserEntity> entitys)
+  {
+    if (!context.Users.Any())
+    {
+      entitys.ForEach(e => context.Users.Add(e));
+    }
+    context.SaveChanges();
+  }
 
   public static List<UserEntity> GenerateRandomUsers(int count = 100)
   {
