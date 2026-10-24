@@ -22,12 +22,14 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
-SeedUser.Seed(
-  builder.Services.BuildServiceProvider().GetRequiredService<AppDbContext>(),
-  SeedUser.GenerateRandomUsers(100));
-
-
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+  var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+  SeedUser.Seed(db, SeedUser.GenerateRandomUsers(100));
+}
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

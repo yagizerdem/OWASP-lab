@@ -16,7 +16,11 @@ services:
     networks:
       - env_net
     healthcheck:
-      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P \"$$MSSQL_SA_PASSWORD\" -C -Q \"SELECT 1\" -b -o /dev/null"]
+      test:
+        [
+          "CMD-SHELL",
+          '/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "$$MSSQL_SA_PASSWORD" -C -Q "SELECT 1" -b -o /dev/null',
+        ]
       interval: 10s
       timeout: 5s
       retries: 10
@@ -57,6 +61,7 @@ services:
     environment:
       ASPNETCORE_URLS: http://+:5010;http://+:5011
       ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=BrokenAccessControl_LAB;User Id=sa;Password=12345aA!;TrustServerCertificate=True"
     networks:
       - env_net
     ports:

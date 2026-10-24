@@ -2,5 +2,4 @@
   <Project Path="Lab/BrokenAccessControl/src/Backend/Backend.csproj" />
   <Project Path="Lab/BrokenAccessControl/src/Context/Context.csproj" />
   <Project Path="Lab/BrokenAccessControl/src/Models/Models.csproj" />
-  <Project Path="Lab/BrokenAccessControl/src/Seeders/Seeders.csproj" />
 </Solution>
