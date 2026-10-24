@@ -10,6 +10,6 @@ public class BankAccountEntity : BaseEntity
   [ForeignKey("OwnerId")]
   public UserEntity owner { get; set; } = null!;
 
-  public string OwnerId { get; set; } = null!;
+  public Guid OwnerId { get; set; }
 
 }

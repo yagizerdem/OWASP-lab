@@ -1,31 +1,37 @@
-using System.Collections.Frozen;
+using Newtonsoft.Json;
 
 public class SeedUser
 {
   public static void Seed(AppDbContext context)
   {
-    if (!context.Users.Any())
-    {
-      context.Users.Add(GenerateRandomUsers(1).First());
-      context.SaveChanges();
-    }
-  }
+    if (context.Users.Any()) return;
 
-  public static void Seed(AppDbContext context, UserEntity entity)
-  {
-    if (!context.Users.Any())
+    var path = Path.Combine(AppContext.BaseDirectory, "Data", "dummy.users.json");
+
+    List<UserEntity>? users = null;
+    if (File.Exists(path))
     {
-      context.Users.Add(entity);
-      context.SaveChanges();
+      var json = File.ReadAllText(path);
+      users = JsonConvert.DeserializeObject<List<UserEntity>>(json, new JsonSerializerSettings
+      {
+        MissingMemberHandling = MissingMemberHandling.Ignore,
+        NullValueHandling = NullValueHandling.Ignore,
+      });
     }
+
+    if (users == null || users.Count == 0)
+    {
+      users = GenerateRandomUsers(1);
+    }
+
+    Seed(context, users);
   }
 
   public static void Seed(AppDbContext context, List<UserEntity> entitys)
   {
-    if (!context.Users.Any())
-    {
-      entitys.ForEach(e => context.Users.Add(e));
-    }
+    if (context.Users.Any()) return;
+
+    context.Users.AddRange(entitys);
     context.SaveChanges();
   }
 
@@ -36,6 +42,7 @@ public class SeedUser
     {
       UserEntity user = new UserEntity()
       {
+        Id = Guid.NewGuid(),
         CreatedAt = DateTime.UtcNow,
         UpdatedAt = DateTime.UtcNow,
         Username = Faker.Internet.UserName(),

@@ -28,25 +28,10 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
 
-  var path = Path.Combine(
-    builder.Environment.ContentRootPath,
-    "Data",
-    "dummy.users.json"
-  );
+  SeedUser.Seed(scope.ServiceProvider.GetRequiredService<AppDbContext>());
+  SeedBankAccount.Seed(scope.ServiceProvider.GetRequiredService<AppDbContext>());
 
-  var json = await File.ReadAllTextAsync(path);
 
-  var users = JsonConvert.DeserializeObject<List<UserEntity>>(json, new JsonSerializerSettings
-  {
-    MissingMemberHandling = MissingMemberHandling.Ignore,
-    NullValueHandling = NullValueHandling.Ignore,
-  });
-
-  if (users != null && users.Count > 0)
-  {
-    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    SeedUser.Seed(db, users);
-  }
 }
 
 
