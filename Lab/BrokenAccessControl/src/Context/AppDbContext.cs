@@ -6,6 +6,7 @@ public class AppDbContext : DbContext
 
   public DbSet<UserEntity> Users { get; set; } = null!;
   public DbSet<BankAccountEntity> BankAccounts { get; set; } = null!;
+  public DbSet<CustomerRiskProfileEntity> CustomerRiskProfiles { get; set; } = null!;
 
   public AppDbContext(DbContextOptions<AppDbContext> options)
        : base(options)

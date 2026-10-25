@@ -21,7 +21,7 @@ namespace Context.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("BankAccountEntity", b =>
+            modelBuilder.Entity("Models.Entity.BankAccountEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -54,7 +54,43 @@ namespace Context.Migrations
                     b.ToTable("BankAccounts");
                 });
 
-            modelBuilder.Entity("UserEntity", b =>
+            modelBuilder.Entity("Models.Entity.CustomerRiskProfileEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("InternalNote")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsFlagged")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("KycStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("RiskScore")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("CustomerRiskProfiles");
+                });
+
+            modelBuilder.Entity("Models.Entity.UserEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -83,9 +119,9 @@ namespace Context.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("BankAccountEntity", b =>
+            modelBuilder.Entity("Models.Entity.BankAccountEntity", b =>
                 {
-                    b.HasOne("UserEntity", "owner")
+                    b.HasOne("Models.Entity.UserEntity", "owner")
                         .WithMany("BankAccounts")
                         .HasForeignKey("OwnerId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -94,7 +130,18 @@ namespace Context.Migrations
                     b.Navigation("owner");
                 });
 
-            modelBuilder.Entity("UserEntity", b =>
+            modelBuilder.Entity("Models.Entity.CustomerRiskProfileEntity", b =>
+                {
+                    b.HasOne("Models.Entity.UserEntity", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Models.Entity.UserEntity", b =>
                 {
                     b.Navigation("BankAccounts");
                 });

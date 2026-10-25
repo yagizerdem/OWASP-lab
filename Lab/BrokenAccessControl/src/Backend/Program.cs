@@ -41,6 +41,7 @@ using (var scope = app.Services.CreateScope())
 {
   SeedUser.Seed(scope.ServiceProvider.GetRequiredService<AppDbContext>());
   SeedBankAccount.Seed(scope.ServiceProvider.GetRequiredService<AppDbContext>());
+  SeedCustomerRiskProfile.Seed(scope.ServiceProvider.GetRequiredService<AppDbContext>());
 }
 
 
