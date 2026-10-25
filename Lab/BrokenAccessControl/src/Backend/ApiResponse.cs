@@ -24,4 +24,7 @@ class ApiResponse
 
   public static ApiResponse Forbidden(string message = "Forbidden")
       => Fail(message, HttpStatusCode.Forbidden);
+
+  public static ApiResponse InternalServerError(string message = "Internal server error")
+      => Fail(message, HttpStatusCode.InternalServerError);
 }

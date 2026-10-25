@@ -1,5 +1,5 @@
 ﻿using System.Security.Cryptography;
-
+using Models.Entity;
 using Newtonsoft.Json;
 
 List<UserEntity> GenerateRandomUsers(int count = 100)
@@ -59,6 +59,37 @@ var bankAccountsJson = JsonConvert.SerializeObject(bankAccounts);
 
 // Console.WriteLine(bankAccountsJson);
 File.WriteAllText("dummy.bankaccounts.json", bankAccountsJson);
+
+
+List<CustomerRiskProfileEntity> GenerateRandomCustomerRiskProfiles(List<UserEntity> users)
+{
+  List<CustomerRiskProfileEntity> riskProfiles = new List<CustomerRiskProfileEntity>();
+  for (int i = 0; i < users.Count; i++)
+  {
+    var user = users[i];
+    CustomerRiskProfileEntity riskProfile = new CustomerRiskProfileEntity()
+    {
+      Id = Guid.NewGuid(),
+      CreatedAt = DateTime.UtcNow,
+      UpdatedAt = DateTime.UtcNow,
+      UserId = user.Id,
+      User = user,
+      RiskScore = Faker.RandomNumber.Next(1, 5),  // Assuming risk level is an integer between 1 and 4
+      IsFlagged = Faker.RandomNumber.Next(0, 10) > 7,  // Randomly flagged as true or false
+      InternalNote = Faker.Lorem.Sentence()
+    }
+    ;
+
+    riskProfiles.Add(riskProfile);
+  }
+
+  return riskProfiles;
+}
+
+var customerRiskProfiles = GenerateRandomCustomerRiskProfiles(users);
+
+var customerRiskProfilesJson = JsonConvert.SerializeObject(customerRiskProfiles);
+File.WriteAllText("dummy.customerriskprofiles.json", customerRiskProfilesJson);
 
 
 public static class BankAccountGenerator

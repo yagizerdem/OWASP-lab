@@ -1,0 +1,1902 @@
+[
+  {
+    "User": {
+      "Username": "juliana",
+      "Password": "pass335598",
+      "Email": "patience_cummerata@borer.us",
+      "BankAccounts": [],
+      "Id": "d8bdb799-3030-4882-a74e-dfca61771004",
+      "CreatedAt": "2026-10-25T15:45:03.9372666Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9373022Z"
+    },
+    "UserId": "d8bdb799-3030-4882-a74e-dfca61771004",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Ipsa quia iste officia non dolorum odio.",
+    "IsFlagged": true,
+    "Id": "7d4720ab-373c-40d9-9960-19a51d19bea0",
+    "CreatedAt": "2026-10-25T15:45:04.0238673Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0238674Z"
+  },
+  {
+    "User": {
+      "Username": "damien_dach",
+      "Password": "pass375855",
+      "Email": "clovis_satterfield@mcclure.biz",
+      "BankAccounts": [],
+      "Id": "84722c98-d9ce-4263-b5da-f0e4bba12173",
+      "CreatedAt": "2026-10-25T15:45:03.9502554Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9502554Z"
+    },
+    "UserId": "84722c98-d9ce-4263-b5da-f0e4bba12173",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Voluptatibus architecto quisquam mollitia nisi mollitia.",
+    "IsFlagged": false,
+    "Id": "952abe75-148e-42bd-8f14-de9bccdcf581",
+    "CreatedAt": "2026-10-25T15:45:04.0265628Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0265629Z"
+  },
+  {
+    "User": {
+      "Username": "donnie",
+      "Password": "pass783115",
+      "Email": "shaniya@muller.uk",
+      "BankAccounts": [],
+      "Id": "f66d671c-3453-4657-93a6-c7b3690bda8a",
+      "CreatedAt": "2026-10-25T15:45:03.9504905Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9504905Z"
+    },
+    "UserId": "f66d671c-3453-4657-93a6-c7b3690bda8a",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Eum dolor sed ut.",
+    "IsFlagged": true,
+    "Id": "feac9140-10cd-4e2c-b0c5-d4d8e2fdb33d",
+    "CreatedAt": "2026-10-25T15:45:04.0266451Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0266451Z"
+  },
+  {
+    "User": {
+      "Username": "petra",
+      "Password": "pass572940",
+      "Email": "lois@russel.uk",
+      "BankAccounts": [],
+      "Id": "652690e6-ec40-4623-b7f9-1f5f141021ba",
+      "CreatedAt": "2026-10-25T15:45:03.9509128Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9509128Z"
+    },
+    "UserId": "652690e6-ec40-4623-b7f9-1f5f141021ba",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Reprehenderit doloribus dolore saepe ea esse cum facilis.",
+    "IsFlagged": true,
+    "Id": "076aad6a-9eb2-4961-83aa-005307d73a6f",
+    "CreatedAt": "2026-10-25T15:45:04.0266616Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0266616Z"
+  },
+  {
+    "User": {
+      "Username": "tyrell",
+      "Password": "pass74778",
+      "Email": "lydia@wilkinsoneffertz.co.uk",
+      "BankAccounts": [],
+      "Id": "5382c111-9719-4a3c-85d5-d77b60ebfba7",
+      "CreatedAt": "2026-10-25T15:45:03.9510558Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9510558Z"
+    },
+    "UserId": "5382c111-9719-4a3c-85d5-d77b60ebfba7",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Inventore et commodi velit aut.",
+    "IsFlagged": false,
+    "Id": "7ffea250-fb89-47a9-8b7d-094ad864c777",
+    "CreatedAt": "2026-10-25T15:45:04.0266903Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0266903Z"
+  },
+  {
+    "User": {
+      "Username": "tyree.osinski",
+      "Password": "pass755051",
+      "Email": "rae_grant@gorczanycruickshank.uk",
+      "BankAccounts": [],
+      "Id": "a9f99a55-a066-45df-9c05-d6179333821c",
+      "CreatedAt": "2026-10-25T15:45:03.9513158Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9513159Z"
+    },
+    "UserId": "a9f99a55-a066-45df-9c05-d6179333821c",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Quaerat corrupti eum recusandae enim dolor.",
+    "IsFlagged": false,
+    "Id": "be68c757-0d24-4e5f-bc4f-566c48378482",
+    "CreatedAt": "2026-10-25T15:45:04.0267095Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0267095Z"
+  },
+  {
+    "User": {
+      "Username": "marjorie",
+      "Password": "pass613295",
+      "Email": "rocio.conn@streichnitzsche.biz",
+      "BankAccounts": [],
+      "Id": "de6fe55e-1b58-4a27-97e4-a69698380f2d",
+      "CreatedAt": "2026-10-25T15:45:03.9515566Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9515566Z"
+    },
+    "UserId": "de6fe55e-1b58-4a27-97e4-a69698380f2d",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Vel sunt iste fugit sint ut sed maxime ratione labore.",
+    "IsFlagged": false,
+    "Id": "ac27bb31-6300-47c8-b191-262e4d93a6b5",
+    "CreatedAt": "2026-10-25T15:45:04.0267307Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0267307Z"
+  },
+  {
+    "User": {
+      "Username": "jeromy.cassin",
+      "Password": "pass318247",
+      "Email": "delpha@langworthchamplin.biz",
+      "BankAccounts": [],
+      "Id": "4426db3d-a954-4128-abbd-cd5f8a4749d6",
+      "CreatedAt": "2026-10-25T15:45:03.9517368Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9517368Z"
+    },
+    "UserId": "4426db3d-a954-4128-abbd-cd5f8a4749d6",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Quia inventore ut vel nulla.",
+    "IsFlagged": false,
+    "Id": "c208a94d-c0c6-4ead-8ba5-f16fe9632da1",
+    "CreatedAt": "2026-10-25T15:45:04.0270716Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0270716Z"
+  },
+  {
+    "User": {
+      "Username": "lewis.hermiston",
+      "Password": "pass221638",
+      "Email": "ladarius.roberts@kuhicledner.co.uk",
+      "BankAccounts": [],
+      "Id": "f384cf34-ad43-4334-8fad-46b042f3ffc2",
+      "CreatedAt": "2026-10-25T15:45:03.9519254Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9519254Z"
+    },
+    "UserId": "f384cf34-ad43-4334-8fad-46b042f3ffc2",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Sint quisquam libero autem quaerat aliquid.",
+    "IsFlagged": true,
+    "Id": "b54e2148-a3c7-4d8a-9840-f8d8f2897832",
+    "CreatedAt": "2026-10-25T15:45:04.0270946Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0270946Z"
+  },
+  {
+    "User": {
+      "Username": "micaela",
+      "Password": "pass367718",
+      "Email": "mathew@kundejewess.co.uk",
+      "BankAccounts": [],
+      "Id": "31b0ed16-8c42-4aba-80ee-6b60117de908",
+      "CreatedAt": "2026-10-25T15:45:03.9521228Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9521228Z"
+    },
+    "UserId": "31b0ed16-8c42-4aba-80ee-6b60117de908",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Ut quia doloribus at ab mollitia.",
+    "IsFlagged": true,
+    "Id": "640b86f8-a7cb-4a3b-b09f-a891395ef9f5",
+    "CreatedAt": "2026-10-25T15:45:04.0271174Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0271174Z"
+  },
+  {
+    "User": {
+      "Username": "lavinia",
+      "Password": "pass736054",
+      "Email": "tess@kihn.us",
+      "BankAccounts": [],
+      "Id": "cbffe50c-c723-49ce-bfb7-b94edd7d5c87",
+      "CreatedAt": "2026-10-25T15:45:03.9523245Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9523245Z"
+    },
+    "UserId": "cbffe50c-c723-49ce-bfb7-b94edd7d5c87",
+    "RiskScore": 2,
+    "KycStatus": "Pending",
+    "InternalNote": "Sed est illum facere nesciunt eos qui accusamus.",
+    "IsFlagged": false,
+    "Id": "8f693536-a932-427a-aa3b-e196303c9bba",
+    "CreatedAt": "2026-10-25T15:45:04.0271396Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0271397Z"
+  },
+  {
+    "User": {
+      "Username": "jennifer",
+      "Password": "pass809320",
+      "Email": "fern@ankunding.us",
+      "BankAccounts": [],
+      "Id": "ff2ebbf8-a5de-4892-baf6-9bf4609f0d8c",
+      "CreatedAt": "2026-10-25T15:45:03.9524707Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9524707Z"
+    },
+    "UserId": "ff2ebbf8-a5de-4892-baf6-9bf4609f0d8c",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Maiores et recusandae rerum doloremque rerum aspernatur.",
+    "IsFlagged": false,
+    "Id": "dd5db596-6207-413e-aa61-cf61a996b9ad",
+    "CreatedAt": "2026-10-25T15:45:04.0271697Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0271698Z"
+  },
+  {
+    "User": {
+      "Username": "dominique",
+      "Password": "pass904472",
+      "Email": "isadore@ernser.co.uk",
+      "BankAccounts": [],
+      "Id": "df39406f-c4a8-4e02-9621-eee55cfc9f97",
+      "CreatedAt": "2026-10-25T15:45:03.9526159Z",
+      "UpdatedAt": "2026-10-25T15:45:03.952616Z"
+    },
+    "UserId": "df39406f-c4a8-4e02-9621-eee55cfc9f97",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Facilis et consequatur ad perferendis commodi veritatis necessitatibus.",
+    "IsFlagged": false,
+    "Id": "67f24940-54d1-4c9d-b36b-9cb2b19403b3",
+    "CreatedAt": "2026-10-25T15:45:04.0271941Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0271941Z"
+  },
+  {
+    "User": {
+      "Username": "tyrique.koch",
+      "Password": "pass220778",
+      "Email": "dejuan@kunderatke.uk",
+      "BankAccounts": [],
+      "Id": "6ab2482a-0fdd-42eb-b8d9-1da8bf5d910b",
+      "CreatedAt": "2026-10-25T15:45:03.9527652Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9527653Z"
+    },
+    "UserId": "6ab2482a-0fdd-42eb-b8d9-1da8bf5d910b",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Et quaerat quis dolorem quo excepturi voluptates autem maiores vel.",
+    "IsFlagged": false,
+    "Id": "789cd0c5-0282-4850-a7a3-003085ba73d2",
+    "CreatedAt": "2026-10-25T15:45:04.0272216Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0272217Z"
+  },
+  {
+    "User": {
+      "Username": "israel_romaguera",
+      "Password": "pass841560",
+      "Email": "adelle@trantow.name",
+      "BankAccounts": [],
+      "Id": "271e495a-999f-4e6e-afa0-257a645ced2d",
+      "CreatedAt": "2026-10-25T15:45:03.9529449Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9529449Z"
+    },
+    "UserId": "271e495a-999f-4e6e-afa0-257a645ced2d",
+    "RiskScore": 2,
+    "KycStatus": "Pending",
+    "InternalNote": "Velit rerum est nesciunt excepturi quam explicabo natus ab nobis.",
+    "IsFlagged": true,
+    "Id": "00298937-4e11-4708-9b02-cc2e57afc259",
+    "CreatedAt": "2026-10-25T15:45:04.0272625Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0272625Z"
+  },
+  {
+    "User": {
+      "Username": "andreanne.shields",
+      "Password": "pass758735",
+      "Email": "florine.bogan@hansen.name",
+      "BankAccounts": [],
+      "Id": "8a4fb7f4-eb27-47fa-a0d3-a2e7898c0f24",
+      "CreatedAt": "2026-10-25T15:45:03.9531317Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9531318Z"
+    },
+    "UserId": "8a4fb7f4-eb27-47fa-a0d3-a2e7898c0f24",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Placeat eaque ut vero quidem.",
+    "IsFlagged": false,
+    "Id": "91883845-8302-4b37-8bf2-477d0ae2c0e5",
+    "CreatedAt": "2026-10-25T15:45:04.0273073Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0273073Z"
+  },
+  {
+    "User": {
+      "Username": "thomas.pollich",
+      "Password": "pass894987",
+      "Email": "pablo@kassulkestehr.name",
+      "BankAccounts": [],
+      "Id": "f21275c6-a442-4f1d-b814-d3b1b973db28",
+      "CreatedAt": "2026-10-25T15:45:03.9533209Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9533209Z"
+    },
+    "UserId": "f21275c6-a442-4f1d-b814-d3b1b973db28",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Nulla dolores aut sapiente qui sed.",
+    "IsFlagged": true,
+    "Id": "2573ebc4-5a95-45ee-a2a6-0da5cacacbc8",
+    "CreatedAt": "2026-10-25T15:45:04.0273268Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0273269Z"
+  },
+  {
+    "User": {
+      "Username": "johathan.vonrueden",
+      "Password": "pass594016",
+      "Email": "hollis@johnsonlueilwitz.com",
+      "BankAccounts": [],
+      "Id": "729d9ff4-1084-4fd1-9b99-8778d106db90",
+      "CreatedAt": "2026-10-25T15:45:03.9534981Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9534982Z"
+    },
+    "UserId": "729d9ff4-1084-4fd1-9b99-8778d106db90",
+    "RiskScore": 2,
+    "KycStatus": "Pending",
+    "InternalNote": "Suscipit magnam molestias omnis ipsa in rerum rerum consectetur.",
+    "IsFlagged": false,
+    "Id": "ee652997-a0f6-464f-99fb-3ab6655ae4d0",
+    "CreatedAt": "2026-10-25T15:45:04.0273482Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0273482Z"
+  },
+  {
+    "User": {
+      "Username": "willy.pagac",
+      "Password": "pass638378",
+      "Email": "urban@effertzberge.uk",
+      "BankAccounts": [],
+      "Id": "3b2bc3e2-ca54-465d-a5f0-112693ffe8e3",
+      "CreatedAt": "2026-10-25T15:45:03.9536659Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9536659Z"
+    },
+    "UserId": "3b2bc3e2-ca54-465d-a5f0-112693ffe8e3",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Sint dicta numquam sint.",
+    "IsFlagged": false,
+    "Id": "9b2753fc-4ab7-4d93-be34-bdcced3314c0",
+    "CreatedAt": "2026-10-25T15:45:04.0273872Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0273872Z"
+  },
+  {
+    "User": {
+      "Username": "billie_torphy",
+      "Password": "pass604893",
+      "Email": "frank.larson@abernathy.us",
+      "BankAccounts": [],
+      "Id": "e5bea6dc-778c-48e8-b8ca-ebb141f02750",
+      "CreatedAt": "2026-10-25T15:45:03.9538289Z",
+      "UpdatedAt": "2026-10-25T15:45:03.953829Z"
+    },
+    "UserId": "e5bea6dc-778c-48e8-b8ca-ebb141f02750",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Recusandae mollitia consequatur dolor veritatis ipsum velit aut laboriosam.",
+    "IsFlagged": false,
+    "Id": "8685fa47-c8a4-4d8d-8bc6-c247bc4291fb",
+    "CreatedAt": "2026-10-25T15:45:04.027402Z",
+    "UpdatedAt": "2026-10-25T15:45:04.027402Z"
+  },
+  {
+    "User": {
+      "Username": "antwon",
+      "Password": "pass754194",
+      "Email": "dillan_reichel@mcdermott.uk",
+      "BankAccounts": [],
+      "Id": "1186baa2-397d-45ac-9871-d76d4d977378",
+      "CreatedAt": "2026-10-25T15:45:03.9540018Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9540018Z"
+    },
+    "UserId": "1186baa2-397d-45ac-9871-d76d4d977378",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Voluptas nesciunt magni itaque placeat quos beatae qui eligendi.",
+    "IsFlagged": true,
+    "Id": "728927b5-311c-4dc2-9c39-104a964ca2a0",
+    "CreatedAt": "2026-10-25T15:45:04.0274348Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0274349Z"
+  },
+  {
+    "User": {
+      "Username": "neha",
+      "Password": "pass70175",
+      "Email": "sigurd_homenick@cormier.info",
+      "BankAccounts": [],
+      "Id": "507c68fb-1086-47b7-ae85-d5e74319075d",
+      "CreatedAt": "2026-10-25T15:45:03.9541909Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9541909Z"
+    },
+    "UserId": "507c68fb-1086-47b7-ae85-d5e74319075d",
+    "RiskScore": 2,
+    "KycStatus": "Pending",
+    "InternalNote": "Vel possimus magni quasi.",
+    "IsFlagged": false,
+    "Id": "7a7b9f3a-995b-4508-8faf-8c7b11ba20a8",
+    "CreatedAt": "2026-10-25T15:45:04.0274675Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0274675Z"
+  },
+  {
+    "User": {
+      "Username": "florencio.buckridge",
+      "Password": "pass477134",
+      "Email": "olen_turcotte@lind.name",
+      "BankAccounts": [],
+      "Id": "e5e375a5-e06b-4f0b-a031-1fa5034eccef",
+      "CreatedAt": "2026-10-25T15:45:03.9543496Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9543496Z"
+    },
+    "UserId": "e5e375a5-e06b-4f0b-a031-1fa5034eccef",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Voluptatum harum aliquam enim ut est consequuntur dignissimos.",
+    "IsFlagged": false,
+    "Id": "12d8a475-a2aa-4ed4-8828-365b1e52c121",
+    "CreatedAt": "2026-10-25T15:45:04.0274817Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0274817Z"
+  },
+  {
+    "User": {
+      "Username": "dolores",
+      "Password": "pass474394",
+      "Email": "marcel_heathcote@bradtke.com",
+      "BankAccounts": [],
+      "Id": "b424773d-a825-4b66-9d6b-557dc6ca8a03",
+      "CreatedAt": "2026-10-25T15:45:03.9545389Z",
+      "UpdatedAt": "2026-10-25T15:45:03.954539Z"
+    },
+    "UserId": "b424773d-a825-4b66-9d6b-557dc6ca8a03",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Iste ducimus suscipit accusantium dicta magnam.",
+    "IsFlagged": false,
+    "Id": "34c6ffb4-7c87-4d52-b37b-aee03bd16ef3",
+    "CreatedAt": "2026-10-25T15:45:04.0275106Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0275107Z"
+  },
+  {
+    "User": {
+      "Username": "nash.schmitt",
+      "Password": "pass460634",
+      "Email": "dagmar_fritsch@beatty.com",
+      "BankAccounts": [],
+      "Id": "c2b40e17-6941-4b44-b769-5b85863041c9",
+      "CreatedAt": "2026-10-25T15:45:03.9547265Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9547265Z"
+    },
+    "UserId": "c2b40e17-6941-4b44-b769-5b85863041c9",
+    "RiskScore": 2,
+    "KycStatus": "Pending",
+    "InternalNote": "Error quo nostrum error accusantium alias.",
+    "IsFlagged": true,
+    "Id": "3c4831d4-884c-4b1d-81f5-d5411104e220",
+    "CreatedAt": "2026-10-25T15:45:04.027533Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0275331Z"
+  },
+  {
+    "User": {
+      "Username": "rowena.jerde",
+      "Password": "pass864033",
+      "Email": "mathias.crist@jones.ca",
+      "BankAccounts": [],
+      "Id": "4b5ed28a-6079-45b7-b365-1453780d0db0",
+      "CreatedAt": "2026-10-25T15:45:03.9549134Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9549134Z"
+    },
+    "UserId": "4b5ed28a-6079-45b7-b365-1453780d0db0",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Amet illo suscipit quos enim consequatur praesentium non.",
+    "IsFlagged": false,
+    "Id": "914c451b-e172-4ff1-ab6f-7e3abe2f3c29",
+    "CreatedAt": "2026-10-25T15:45:04.0275546Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0275546Z"
+  },
+  {
+    "User": {
+      "Username": "lavada.luettgen",
+      "Password": "pass764328",
+      "Email": "mortimer_doyle@browndoyle.info",
+      "BankAccounts": [],
+      "Id": "abddf0c6-3606-4a02-88ff-b76d18a0e8cb",
+      "CreatedAt": "2026-10-25T15:45:03.9550831Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9550831Z"
+    },
+    "UserId": "abddf0c6-3606-4a02-88ff-b76d18a0e8cb",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Est voluptates ab voluptatem consectetur officiis qui quis.",
+    "IsFlagged": false,
+    "Id": "a8963dac-0a5f-487c-ba66-eee5d39cc542",
+    "CreatedAt": "2026-10-25T15:45:04.0275827Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0275827Z"
+  },
+  {
+    "User": {
+      "Username": "ilene",
+      "Password": "pass889035",
+      "Email": "beatrice.stokes@hickle.name",
+      "BankAccounts": [],
+      "Id": "3b1f33e6-eec5-45a5-b144-126d4f092bae",
+      "CreatedAt": "2026-10-25T15:45:03.9552629Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9552629Z"
+    },
+    "UserId": "3b1f33e6-eec5-45a5-b144-126d4f092bae",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Est natus doloribus id.",
+    "IsFlagged": false,
+    "Id": "fcf693a5-7c99-4f3b-bdf1-312d8bd1438f",
+    "CreatedAt": "2026-10-25T15:45:04.0276114Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0276114Z"
+  },
+  {
+    "User": {
+      "Username": "florence",
+      "Password": "pass791190",
+      "Email": "kayley@mitchell.co.uk",
+      "BankAccounts": [],
+      "Id": "9f55db1b-fabf-4a5f-811b-d65170ab164c",
+      "CreatedAt": "2026-10-25T15:45:03.955428Z",
+      "UpdatedAt": "2026-10-25T15:45:03.955428Z"
+    },
+    "UserId": "9f55db1b-fabf-4a5f-811b-d65170ab164c",
+    "RiskScore": 2,
+    "KycStatus": "Pending",
+    "InternalNote": "Omnis quasi voluptatum numquam repudiandae.",
+    "IsFlagged": true,
+    "Id": "9d1dc3d1-aeb6-49ce-a268-972a0b895c62",
+    "CreatedAt": "2026-10-25T15:45:04.0276266Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0276266Z"
+  },
+  {
+    "User": {
+      "Username": "catherine",
+      "Password": "pass40229",
+      "Email": "william_lind@armstrong.com",
+      "BankAccounts": [],
+      "Id": "ef1e4ba0-97cb-43a1-a018-92226030a2e1",
+      "CreatedAt": "2026-10-25T15:45:03.9555978Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9555978Z"
+    },
+    "UserId": "ef1e4ba0-97cb-43a1-a018-92226030a2e1",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Libero omnis voluptas odit voluptates non.",
+    "IsFlagged": false,
+    "Id": "8dffbe5f-895f-405f-8e17-8aa20fde9b2b",
+    "CreatedAt": "2026-10-25T15:45:04.0276448Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0276448Z"
+  },
+  {
+    "User": {
+      "Username": "kailee.west",
+      "Password": "pass342608",
+      "Email": "brandy@rogahn.us",
+      "BankAccounts": [],
+      "Id": "2231194d-1dfa-4a43-aa22-c4ad22dfb796",
+      "CreatedAt": "2026-10-25T15:45:03.955755Z",
+      "UpdatedAt": "2026-10-25T15:45:03.955755Z"
+    },
+    "UserId": "2231194d-1dfa-4a43-aa22-c4ad22dfb796",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Quia sed ut laborum dolorem velit saepe.",
+    "IsFlagged": false,
+    "Id": "158add39-b93d-4fac-8f1a-8f3ef91fdd54",
+    "CreatedAt": "2026-10-25T15:45:04.0276667Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0276667Z"
+  },
+  {
+    "User": {
+      "Username": "jakob.anderson",
+      "Password": "pass381766",
+      "Email": "kyla.reinger@ziemann.uk",
+      "BankAccounts": [],
+      "Id": "ebead9f2-30f8-42f7-8f4f-67316b8f9e75",
+      "CreatedAt": "2026-10-25T15:45:03.9559405Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9559405Z"
+    },
+    "UserId": "ebead9f2-30f8-42f7-8f4f-67316b8f9e75",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Aut quod in voluptas sit facilis id voluptatem animi.",
+    "IsFlagged": false,
+    "Id": "6d8a91cf-3d87-4326-a7ba-6a9d958c4238",
+    "CreatedAt": "2026-10-25T15:45:04.0276917Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0276917Z"
+  },
+  {
+    "User": {
+      "Username": "paolo",
+      "Password": "pass663174",
+      "Email": "arno@turcotte.ca",
+      "BankAccounts": [],
+      "Id": "bac07ad9-aaab-4121-96b3-84b01f1d5972",
+      "CreatedAt": "2026-10-25T15:45:03.9561323Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9561323Z"
+    },
+    "UserId": "bac07ad9-aaab-4121-96b3-84b01f1d5972",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Delectus eum ad ab et recusandae necessitatibus totam.",
+    "IsFlagged": false,
+    "Id": "7e1982ea-4287-4e9e-bbef-ccff868dd4c8",
+    "CreatedAt": "2026-10-25T15:45:04.0277248Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0277248Z"
+  },
+  {
+    "User": {
+      "Username": "maeve",
+      "Password": "pass985647",
+      "Email": "camryn_kertzmann@gottlieb.info",
+      "BankAccounts": [],
+      "Id": "8598daf6-8b77-4f00-bca9-6235fcc6f5d6",
+      "CreatedAt": "2026-10-25T15:45:03.956278Z",
+      "UpdatedAt": "2026-10-25T15:45:03.956278Z"
+    },
+    "UserId": "8598daf6-8b77-4f00-bca9-6235fcc6f5d6",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Maiores consectetur expedita eaque voluptates molestias.",
+    "IsFlagged": false,
+    "Id": "63eb5664-a7cd-4457-a352-e13ad1ff3978",
+    "CreatedAt": "2026-10-25T15:45:04.027755Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0277551Z"
+  },
+  {
+    "User": {
+      "Username": "sadye.toy",
+      "Password": "pass805842",
+      "Email": "alia_jakubowski@schaden.uk",
+      "BankAccounts": [],
+      "Id": "6fb74c29-a75b-4a02-828b-49c6de7f13f6",
+      "CreatedAt": "2026-10-25T15:45:03.9564629Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9564629Z"
+    },
+    "UserId": "6fb74c29-a75b-4a02-828b-49c6de7f13f6",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Vel eos nemo qui repellat reiciendis quo velit.",
+    "IsFlagged": false,
+    "Id": "29ed1a4b-9279-4d80-9642-453052bd83d6",
+    "CreatedAt": "2026-10-25T15:45:04.0277764Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0277764Z"
+  },
+  {
+    "User": {
+      "Username": "bernice",
+      "Password": "pass495242",
+      "Email": "chanel.jakubowski@grant.uk",
+      "BankAccounts": [],
+      "Id": "19bf5175-3e2e-47f1-8abe-c8e34e3cd858",
+      "CreatedAt": "2026-10-25T15:45:03.9566289Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9566289Z"
+    },
+    "UserId": "19bf5175-3e2e-47f1-8abe-c8e34e3cd858",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Incidunt veritatis inventore repudiandae nulla nesciunt voluptate ut impedit labore.",
+    "IsFlagged": false,
+    "Id": "9a13610f-0dd8-47ff-8f6f-fcd67ece2333",
+    "CreatedAt": "2026-10-25T15:45:04.0278048Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0278048Z"
+  },
+  {
+    "User": {
+      "Username": "maudie",
+      "Password": "pass520053",
+      "Email": "marlin_ondricka@pfeffer.ca",
+      "BankAccounts": [],
+      "Id": "043c2d08-4ac2-408b-9c43-3dbb5028f282",
+      "CreatedAt": "2026-10-25T15:45:03.9567983Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9567983Z"
+    },
+    "UserId": "043c2d08-4ac2-408b-9c43-3dbb5028f282",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Sit suscipit deserunt ad voluptas veritatis aut.",
+    "IsFlagged": false,
+    "Id": "3211cd7e-18c1-4b4c-8a8a-df0e80eb6538",
+    "CreatedAt": "2026-10-25T15:45:04.0278396Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0278397Z"
+  },
+  {
+    "User": {
+      "Username": "cayla",
+      "Password": "pass797815",
+      "Email": "geo.haag@koelpin.info",
+      "BankAccounts": [],
+      "Id": "eedb7bab-bb51-4231-a1ad-cfa2da5c19c2",
+      "CreatedAt": "2026-10-25T15:45:03.9569921Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9569921Z"
+    },
+    "UserId": "eedb7bab-bb51-4231-a1ad-cfa2da5c19c2",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Veritatis aut eaque quae et error nostrum qui voluptatum.",
+    "IsFlagged": false,
+    "Id": "d5bb84d9-05f4-4a02-af1e-f3a24c1dd278",
+    "CreatedAt": "2026-10-25T15:45:04.0278652Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0278652Z"
+  },
+  {
+    "User": {
+      "Username": "tyshawn.jast",
+      "Password": "pass172537",
+      "Email": "kade.zieme@hansen.ca",
+      "BankAccounts": [],
+      "Id": "afc15bad-0e78-46d2-b9c5-7def63f70eae",
+      "CreatedAt": "2026-10-25T15:45:03.9571801Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9571801Z"
+    },
+    "UserId": "afc15bad-0e78-46d2-b9c5-7def63f70eae",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Autem vero voluptas voluptatem temporibus tempora dicta occaecati.",
+    "IsFlagged": false,
+    "Id": "5244c0f2-84d1-4215-8499-8299975ff730",
+    "CreatedAt": "2026-10-25T15:45:04.0278971Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0278971Z"
+  },
+  {
+    "User": {
+      "Username": "lucinda",
+      "Password": "pass942644",
+      "Email": "griffin.schoen@morar.ca",
+      "BankAccounts": [],
+      "Id": "492f4508-952e-4764-8ced-23a6315516ca",
+      "CreatedAt": "2026-10-25T15:45:03.9573593Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9573593Z"
+    },
+    "UserId": "492f4508-952e-4764-8ced-23a6315516ca",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Voluptatibus sapiente consequatur sit quis magni iusto commodi officiis.",
+    "IsFlagged": false,
+    "Id": "9f563730-44ea-4067-809e-e91155fb264e",
+    "CreatedAt": "2026-10-25T15:45:04.0279259Z",
+    "UpdatedAt": "2026-10-25T15:45:04.027926Z"
+  },
+  {
+    "User": {
+      "Username": "angelina",
+      "Password": "pass565195",
+      "Email": "deshawn_bernier@labadie.co.uk",
+      "BankAccounts": [],
+      "Id": "7eca73ab-be52-4a6c-a71c-fc3ce986d129",
+      "CreatedAt": "2026-10-25T15:45:03.9575317Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9575317Z"
+    },
+    "UserId": "7eca73ab-be52-4a6c-a71c-fc3ce986d129",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Placeat aut delectus quibusdam.",
+    "IsFlagged": false,
+    "Id": "ea72d973-e516-49e0-9eaa-aaf1bb89001f",
+    "CreatedAt": "2026-10-25T15:45:04.0279571Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0279571Z"
+  },
+  {
+    "User": {
+      "Username": "keara",
+      "Password": "pass694154",
+      "Email": "kody_kris@ward.uk",
+      "BankAccounts": [],
+      "Id": "4ec3a53c-881d-44f8-b8d1-ca0f1768909c",
+      "CreatedAt": "2026-10-25T15:45:03.9576876Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9576877Z"
+    },
+    "UserId": "4ec3a53c-881d-44f8-b8d1-ca0f1768909c",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Velit dolorem sint libero deserunt officia facilis debitis molestiae ut.",
+    "IsFlagged": false,
+    "Id": "48d6e85e-2f0d-40cb-91ad-8e8e1000549b",
+    "CreatedAt": "2026-10-25T15:45:04.0279724Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0279725Z"
+  },
+  {
+    "User": {
+      "Username": "kareem_strosin",
+      "Password": "pass149452",
+      "Email": "maeve@schultz.co.uk",
+      "BankAccounts": [],
+      "Id": "55b602f4-85bd-4db7-99a0-ca1150034553",
+      "CreatedAt": "2026-10-25T15:45:03.9578434Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9578435Z"
+    },
+    "UserId": "55b602f4-85bd-4db7-99a0-ca1150034553",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Numquam at eaque itaque perspiciatis natus et.",
+    "IsFlagged": false,
+    "Id": "9b899207-fdd6-4660-9691-5b1aa0bb5a77",
+    "CreatedAt": "2026-10-25T15:45:04.0280086Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0280086Z"
+  },
+  {
+    "User": {
+      "Username": "cleveland",
+      "Password": "pass280189",
+      "Email": "nadia@dickiruecker.ca",
+      "BankAccounts": [],
+      "Id": "7c56750e-5a62-4b4f-b66e-d742bb1624ba",
+      "CreatedAt": "2026-10-25T15:45:03.9580415Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9580415Z"
+    },
+    "UserId": "7c56750e-5a62-4b4f-b66e-d742bb1624ba",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Vero aut est voluptatem labore.",
+    "IsFlagged": true,
+    "Id": "48085d78-cb99-41d6-a4a6-aed6c8f94031",
+    "CreatedAt": "2026-10-25T15:45:04.0280325Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0280325Z"
+  },
+  {
+    "User": {
+      "Username": "hazel",
+      "Password": "pass188134",
+      "Email": "graciela@altenwerthgulgowski.ca",
+      "BankAccounts": [],
+      "Id": "7c19b360-70d3-4374-80f2-3397a5390f9d",
+      "CreatedAt": "2026-10-25T15:45:03.958218Z",
+      "UpdatedAt": "2026-10-25T15:45:03.958218Z"
+    },
+    "UserId": "7c19b360-70d3-4374-80f2-3397a5390f9d",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Distinctio molestias aut nihil veniam accusamus qui excepturi aliquam.",
+    "IsFlagged": true,
+    "Id": "5fa27b95-e345-47ce-aba5-74b2bd206f8c",
+    "CreatedAt": "2026-10-25T15:45:04.0280508Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0280508Z"
+  },
+  {
+    "User": {
+      "Username": "kelsie.quigley",
+      "Password": "pass403105",
+      "Email": "enrico.roberts@emmerichmaggio.biz",
+      "BankAccounts": [],
+      "Id": "6189a91e-529b-461a-8a19-888e6601bbb2",
+      "CreatedAt": "2026-10-25T15:45:03.9584038Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9584038Z"
+    },
+    "UserId": "6189a91e-529b-461a-8a19-888e6601bbb2",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Quis et dolores quae exercitationem.",
+    "IsFlagged": false,
+    "Id": "2414e9bb-ed4b-41ee-9707-41f176489fab",
+    "CreatedAt": "2026-10-25T15:45:04.028083Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0280831Z"
+  },
+  {
+    "User": {
+      "Username": "monroe_marks",
+      "Password": "pass210088",
+      "Email": "jett@corwinchristiansen.uk",
+      "BankAccounts": [],
+      "Id": "479cbe0d-5fd6-4f0f-bb03-2cdf5ed81ef5",
+      "CreatedAt": "2026-10-25T15:45:03.9590575Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9590575Z"
+    },
+    "UserId": "479cbe0d-5fd6-4f0f-bb03-2cdf5ed81ef5",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Accusamus natus soluta odit et ea neque.",
+    "IsFlagged": true,
+    "Id": "0cf24510-a1f1-435c-8049-7df21c1b8eed",
+    "CreatedAt": "2026-10-25T15:45:04.0281018Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0281018Z"
+  },
+  {
+    "User": {
+      "Username": "dovie",
+      "Password": "pass734895",
+      "Email": "dillon.hagenes@veum.info",
+      "BankAccounts": [],
+      "Id": "f28f55cd-f7ef-4725-a6ca-b7063317495a",
+      "CreatedAt": "2026-10-25T15:45:03.9591544Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9591544Z"
+    },
+    "UserId": "f28f55cd-f7ef-4725-a6ca-b7063317495a",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Labore quisquam expedita labore quae dolores.",
+    "IsFlagged": true,
+    "Id": "b5c77276-dd2d-494a-a483-2e917fb75aa9",
+    "CreatedAt": "2026-10-25T15:45:04.0281266Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0281266Z"
+  },
+  {
+    "User": {
+      "Username": "brandy",
+      "Password": "pass871542",
+      "Email": "abdul.quigley@kertzmanncarroll.us",
+      "BankAccounts": [],
+      "Id": "06ec7079-5540-44d0-b748-b12222019ed1",
+      "CreatedAt": "2026-10-25T15:45:03.9592482Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9592482Z"
+    },
+    "UserId": "06ec7079-5540-44d0-b748-b12222019ed1",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Impedit repellendus error sunt molestiae minus.",
+    "IsFlagged": true,
+    "Id": "9ace62e1-33b5-4413-9d24-d06d307c2de4",
+    "CreatedAt": "2026-10-25T15:45:04.0281478Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0281478Z"
+  },
+  {
+    "User": {
+      "Username": "tate",
+      "Password": "pass174063",
+      "Email": "orlo@nader.biz",
+      "BankAccounts": [],
+      "Id": "4124fea1-8a76-4ced-a664-e075a66e6669",
+      "CreatedAt": "2026-10-25T15:45:03.9593472Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9593472Z"
+    },
+    "UserId": "4124fea1-8a76-4ced-a664-e075a66e6669",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Quis sequi veritatis minima eaque illo cumque maxime.",
+    "IsFlagged": true,
+    "Id": "6fad7ec0-5931-4e0c-99b0-b66eaf74720b",
+    "CreatedAt": "2026-10-25T15:45:04.028169Z",
+    "UpdatedAt": "2026-10-25T15:45:04.028169Z"
+  },
+  {
+    "User": {
+      "Username": "lilla",
+      "Password": "pass724713",
+      "Email": "zechariah_heller@cummerata.ca",
+      "BankAccounts": [],
+      "Id": "d6f88894-f486-45c1-af30-1dfb9fd3bf2f",
+      "CreatedAt": "2026-10-25T15:45:03.9594343Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9594343Z"
+    },
+    "UserId": "d6f88894-f486-45c1-af30-1dfb9fd3bf2f",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Vel ipsum in possimus voluptatem minima iusto et et vel.",
+    "IsFlagged": false,
+    "Id": "a625513a-c2b2-4929-b5a5-909d9c303ca1",
+    "CreatedAt": "2026-10-25T15:45:04.0281973Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0281973Z"
+  },
+  {
+    "User": {
+      "Username": "stuart",
+      "Password": "pass123762",
+      "Email": "rahsaan@ryan.info",
+      "BankAccounts": [],
+      "Id": "3136ddd8-ff43-4184-8a93-06d854378cf2",
+      "CreatedAt": "2026-10-25T15:45:03.9595316Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9595316Z"
+    },
+    "UserId": "3136ddd8-ff43-4184-8a93-06d854378cf2",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Et ea ullam saepe et explicabo totam soluta illo.",
+    "IsFlagged": false,
+    "Id": "d90bbbd5-61fb-4ac3-b781-aa89e9062f22",
+    "CreatedAt": "2026-10-25T15:45:04.0282328Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0282328Z"
+  },
+  {
+    "User": {
+      "Username": "amina",
+      "Password": "pass587918",
+      "Email": "johnnie.jakubowski@christiansen.us",
+      "BankAccounts": [],
+      "Id": "6cf7a91b-e892-4769-b583-0ad667fbd1f9",
+      "CreatedAt": "2026-10-25T15:45:03.9596188Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9596188Z"
+    },
+    "UserId": "6cf7a91b-e892-4769-b583-0ad667fbd1f9",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Et non ullam sit recusandae nesciunt quis occaecati necessitatibus architecto.",
+    "IsFlagged": true,
+    "Id": "d2444fcb-2999-4e53-b209-e79f8458ef48",
+    "CreatedAt": "2026-10-25T15:45:04.028265Z",
+    "UpdatedAt": "2026-10-25T15:45:04.028265Z"
+  },
+  {
+    "User": {
+      "Username": "antone",
+      "Password": "pass186517",
+      "Email": "bo.emmerich@ankunding.info",
+      "BankAccounts": [],
+      "Id": "5237be9d-52c4-4c2a-82ae-499d55845799",
+      "CreatedAt": "2026-10-25T15:45:03.9597254Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9597255Z"
+    },
+    "UserId": "5237be9d-52c4-4c2a-82ae-499d55845799",
+    "RiskScore": 2,
+    "KycStatus": "Pending",
+    "InternalNote": "Voluptates quod eum cum dolore cum temporibus voluptas quasi qui.",
+    "IsFlagged": false,
+    "Id": "da18be75-8994-4765-9b47-00c32700b74b",
+    "CreatedAt": "2026-10-25T15:45:04.0283Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0283001Z"
+  },
+  {
+    "User": {
+      "Username": "annetta",
+      "Password": "pass929543",
+      "Email": "alejandrin_harvey@denesikpagac.biz",
+      "BankAccounts": [],
+      "Id": "a715fab5-8451-43e6-84d2-8047946d1753",
+      "CreatedAt": "2026-10-25T15:45:03.9598189Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9598189Z"
+    },
+    "UserId": "a715fab5-8451-43e6-84d2-8047946d1753",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Qui voluptatem quod saepe non laudantium quisquam unde.",
+    "IsFlagged": false,
+    "Id": "8f94f566-f31d-4175-9bf7-6e95ca566cfe",
+    "CreatedAt": "2026-10-25T15:45:04.0283347Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0283348Z"
+  },
+  {
+    "User": {
+      "Username": "lottie",
+      "Password": "pass294233",
+      "Email": "benny@hegmann.uk",
+      "BankAccounts": [],
+      "Id": "089de4f6-65fe-41d6-8481-609bd7b007cd",
+      "CreatedAt": "2026-10-25T15:45:03.959919Z",
+      "UpdatedAt": "2026-10-25T15:45:03.959919Z"
+    },
+    "UserId": "089de4f6-65fe-41d6-8481-609bd7b007cd",
+    "RiskScore": 2,
+    "KycStatus": "Pending",
+    "InternalNote": "Deserunt non iste iusto voluptatem ipsa voluptatum.",
+    "IsFlagged": true,
+    "Id": "55f93b1c-473a-43a9-b69c-b1dd272997ba",
+    "CreatedAt": "2026-10-25T15:45:04.0283632Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0283632Z"
+  },
+  {
+    "User": {
+      "Username": "jaquan",
+      "Password": "pass977775",
+      "Email": "anabelle@muller.co.uk",
+      "BankAccounts": [],
+      "Id": "d462279d-dbfc-414c-a8e3-bf169cd2f36d",
+      "CreatedAt": "2026-10-25T15:45:03.9600055Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9600055Z"
+    },
+    "UserId": "d462279d-dbfc-414c-a8e3-bf169cd2f36d",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Laudantium dolore rerum aliquam.",
+    "IsFlagged": false,
+    "Id": "ed422ee3-6acf-4e0f-93ca-6d93faae3094",
+    "CreatedAt": "2026-10-25T15:45:04.0283884Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0283884Z"
+  },
+  {
+    "User": {
+      "Username": "raina_wisoky",
+      "Password": "pass732649",
+      "Email": "destiney.schultz@friesen.co.uk",
+      "BankAccounts": [],
+      "Id": "5672e378-bd5e-46eb-bf78-f0b70fb31977",
+      "CreatedAt": "2026-10-25T15:45:03.9600909Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9600909Z"
+    },
+    "UserId": "5672e378-bd5e-46eb-bf78-f0b70fb31977",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Vitae exercitationem pariatur error necessitatibus officiis quam rerum.",
+    "IsFlagged": true,
+    "Id": "e64328c1-9ab1-45c6-8f55-56c5c0a6f336",
+    "CreatedAt": "2026-10-25T15:45:04.0284035Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0284035Z"
+  },
+  {
+    "User": {
+      "Username": "orlando.mayer",
+      "Password": "pass488221",
+      "Email": "delia_roob@beatty.ca",
+      "BankAccounts": [],
+      "Id": "09e0d9c1-bb6e-4a8c-93d0-a52e4d96f756",
+      "CreatedAt": "2026-10-25T15:45:03.960188Z",
+      "UpdatedAt": "2026-10-25T15:45:03.960188Z"
+    },
+    "UserId": "09e0d9c1-bb6e-4a8c-93d0-a52e4d96f756",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Qui veritatis sint facilis.",
+    "IsFlagged": true,
+    "Id": "28174c00-a844-41fc-8e58-97c7ad26fc92",
+    "CreatedAt": "2026-10-25T15:45:04.0284332Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0284332Z"
+  },
+  {
+    "User": {
+      "Username": "beatrice_shanahan",
+      "Password": "pass372267",
+      "Email": "brigitte.langosh@koch.us",
+      "BankAccounts": [],
+      "Id": "e5f7acf6-c033-415c-a6ef-e21590dabd47",
+      "CreatedAt": "2026-10-25T15:45:03.9602837Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9602838Z"
+    },
+    "UserId": "e5f7acf6-c033-415c-a6ef-e21590dabd47",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Enim libero veritatis sed dolor ut delectus voluptatem.",
+    "IsFlagged": false,
+    "Id": "a61a5443-a437-4a00-b445-14d082063c00",
+    "CreatedAt": "2026-10-25T15:45:04.0284473Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0284473Z"
+  },
+  {
+    "User": {
+      "Username": "jon",
+      "Password": "pass976280",
+      "Email": "gina_kohler@schulist.name",
+      "BankAccounts": [],
+      "Id": "a4713bf3-579e-4662-80b5-8c4dfa5b2b1e",
+      "CreatedAt": "2026-10-25T15:45:03.9603929Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9603929Z"
+    },
+    "UserId": "a4713bf3-579e-4662-80b5-8c4dfa5b2b1e",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Voluptas quas et delectus.",
+    "IsFlagged": true,
+    "Id": "cfab6589-807c-4a7c-98ab-08618fe2a6a3",
+    "CreatedAt": "2026-10-25T15:45:04.0284752Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0284752Z"
+  },
+  {
+    "User": {
+      "Username": "eunice.weissnat",
+      "Password": "pass863933",
+      "Email": "kris@tremblaybatz.info",
+      "BankAccounts": [],
+      "Id": "6eb8ce19-06ed-4149-a532-968920186e8a",
+      "CreatedAt": "2026-10-25T15:45:03.9604952Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9604952Z"
+    },
+    "UserId": "6eb8ce19-06ed-4149-a532-968920186e8a",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Dolorem iure molestiae voluptatem ut quaerat quia.",
+    "IsFlagged": false,
+    "Id": "b74ce58a-b2c3-4d46-83c0-e822d8335f5e",
+    "CreatedAt": "2026-10-25T15:45:04.0284903Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0284904Z"
+  },
+  {
+    "User": {
+      "Username": "ivory",
+      "Password": "pass432864",
+      "Email": "estel_abernathy@ferry.com",
+      "BankAccounts": [],
+      "Id": "a45c9f8f-510c-41c0-9a86-69909a3177aa",
+      "CreatedAt": "2026-10-25T15:45:03.9605893Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9605894Z"
+    },
+    "UserId": "a45c9f8f-510c-41c0-9a86-69909a3177aa",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Fugiat harum est ipsam veniam.",
+    "IsFlagged": true,
+    "Id": "7b6f4530-dcad-4d9c-8a73-36b9327a8943",
+    "CreatedAt": "2026-10-25T15:45:04.0285155Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0285155Z"
+  },
+  {
+    "User": {
+      "Username": "brianne",
+      "Password": "pass757140",
+      "Email": "tiffany_carter@mills.us",
+      "BankAccounts": [],
+      "Id": "b6e3320b-b160-4008-a573-96c1d3557d06",
+      "CreatedAt": "2026-10-25T15:45:03.9606882Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9606882Z"
+    },
+    "UserId": "b6e3320b-b160-4008-a573-96c1d3557d06",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Quaerat et unde amet ea dolor omnis.",
+    "IsFlagged": false,
+    "Id": "f9f234e6-f303-4068-86d4-fa7b4423680e",
+    "CreatedAt": "2026-10-25T15:45:04.0285331Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0285331Z"
+  },
+  {
+    "User": {
+      "Username": "ethel",
+      "Password": "pass667510",
+      "Email": "vincent_harvey@crooks.com",
+      "BankAccounts": [],
+      "Id": "0ac89d02-b943-4375-a2e6-0c0943c24d20",
+      "CreatedAt": "2026-10-25T15:45:03.9607758Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9607758Z"
+    },
+    "UserId": "0ac89d02-b943-4375-a2e6-0c0943c24d20",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Nobis et sed omnis dolore consequatur.",
+    "IsFlagged": false,
+    "Id": "cefd9076-260a-417d-842f-80ea64ef48a5",
+    "CreatedAt": "2026-10-25T15:45:04.0285576Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0285576Z"
+  },
+  {
+    "User": {
+      "Username": "liliane",
+      "Password": "pass37556",
+      "Email": "reyes_lindgren@satterfield.us",
+      "BankAccounts": [],
+      "Id": "e40fc1a3-26a1-417c-8a88-5a197d045f17",
+      "CreatedAt": "2026-10-25T15:45:03.9608767Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9608767Z"
+    },
+    "UserId": "e40fc1a3-26a1-417c-8a88-5a197d045f17",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Illo nihil consequatur voluptatem in voluptatum ut debitis suscipit.",
+    "IsFlagged": false,
+    "Id": "28f6592d-dc6e-4be9-a823-b3af41817313",
+    "CreatedAt": "2026-10-25T15:45:04.028579Z",
+    "UpdatedAt": "2026-10-25T15:45:04.028579Z"
+  },
+  {
+    "User": {
+      "Username": "demetris",
+      "Password": "pass472738",
+      "Email": "grayce_corkery@wiza.name",
+      "BankAccounts": [],
+      "Id": "c4246486-3ea2-4f51-bae0-013c490b5cc3",
+      "CreatedAt": "2026-10-25T15:45:03.9609824Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9609825Z"
+    },
+    "UserId": "c4246486-3ea2-4f51-bae0-013c490b5cc3",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Voluptates natus deserunt laborum odio temporibus et.",
+    "IsFlagged": false,
+    "Id": "1bb743d3-28f5-49a2-a58d-53d5e5ccbfa9",
+    "CreatedAt": "2026-10-25T15:45:04.0286107Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0286107Z"
+  },
+  {
+    "User": {
+      "Username": "nelda.sawayn",
+      "Password": "pass68122",
+      "Email": "stacey@lueilwitzokeefe.us",
+      "BankAccounts": [],
+      "Id": "bb147f2d-c65c-45b4-82ff-2fe6dad74d62",
+      "CreatedAt": "2026-10-25T15:45:03.9610821Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9610822Z"
+    },
+    "UserId": "bb147f2d-c65c-45b4-82ff-2fe6dad74d62",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Rerum deleniti earum dolor ad.",
+    "IsFlagged": false,
+    "Id": "6fb51231-73fd-4fa7-9af3-2ba405efdf6c",
+    "CreatedAt": "2026-10-25T15:45:04.0286353Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0286354Z"
+  },
+  {
+    "User": {
+      "Username": "lindsey",
+      "Password": "pass162681",
+      "Email": "cathryn@stehrgreen.uk",
+      "BankAccounts": [],
+      "Id": "2417d601-dfc1-4ded-81c0-f644301c6b2c",
+      "CreatedAt": "2026-10-25T15:45:03.9611753Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9611753Z"
+    },
+    "UserId": "2417d601-dfc1-4ded-81c0-f644301c6b2c",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Cumque dolorum voluptatibus aut et quam consequatur necessitatibus ex iure.",
+    "IsFlagged": false,
+    "Id": "69a241e9-11d8-4dc2-bba3-012df32bb31f",
+    "CreatedAt": "2026-10-25T15:45:04.0286541Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0286541Z"
+  },
+  {
+    "User": {
+      "Username": "simone",
+      "Password": "pass841096",
+      "Email": "ayla@paucek.co.uk",
+      "BankAccounts": [],
+      "Id": "8de7b5b1-1f66-44a4-8c6b-372387ecc1b6",
+      "CreatedAt": "2026-10-25T15:45:03.9612628Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9612628Z"
+    },
+    "UserId": "8de7b5b1-1f66-44a4-8c6b-372387ecc1b6",
+    "RiskScore": 2,
+    "KycStatus": "Pending",
+    "InternalNote": "At inventore autem vero expedita iure.",
+    "IsFlagged": false,
+    "Id": "101c2873-d733-4adc-b96c-dfa516ba0fa3",
+    "CreatedAt": "2026-10-25T15:45:04.0286888Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0286888Z"
+  },
+  {
+    "User": {
+      "Username": "adeline_oreilly",
+      "Password": "pass194547",
+      "Email": "lorenza@jacobsparker.com",
+      "BankAccounts": [],
+      "Id": "48d07326-3d1c-4864-8a7c-eaa5caedcedd",
+      "CreatedAt": "2026-10-25T15:45:03.961347Z",
+      "UpdatedAt": "2026-10-25T15:45:03.961347Z"
+    },
+    "UserId": "48d07326-3d1c-4864-8a7c-eaa5caedcedd",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Aut aut aliquam dignissimos adipisci soluta cupiditate quisquam est.",
+    "IsFlagged": false,
+    "Id": "63b1c4ba-0933-4e19-bccc-b7be3670d7b8",
+    "CreatedAt": "2026-10-25T15:45:04.0287097Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0287097Z"
+  },
+  {
+    "User": {
+      "Username": "freeda.gaylord",
+      "Password": "pass16161",
+      "Email": "cornell@ryansauer.name",
+      "BankAccounts": [],
+      "Id": "5638fc80-2a9c-4dbf-afde-a0c38e45e0fb",
+      "CreatedAt": "2026-10-25T15:45:03.9614449Z",
+      "UpdatedAt": "2026-10-25T15:45:03.961445Z"
+    },
+    "UserId": "5638fc80-2a9c-4dbf-afde-a0c38e45e0fb",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Placeat eos labore eius modi quaerat quis eos.",
+    "IsFlagged": false,
+    "Id": "34250de5-7fed-4d93-8edd-aa414ed6ff95",
+    "CreatedAt": "2026-10-25T15:45:04.0287416Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0287416Z"
+  },
+  {
+    "User": {
+      "Username": "dave",
+      "Password": "pass753260",
+      "Email": "alexanne.kris@dooleymuller.co.uk",
+      "BankAccounts": [],
+      "Id": "492d14e3-d307-4865-a63e-3f2b441da8c5",
+      "CreatedAt": "2026-10-25T15:45:03.9615458Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9615459Z"
+    },
+    "UserId": "492d14e3-d307-4865-a63e-3f2b441da8c5",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Quaerat fugit nulla vero est.",
+    "IsFlagged": false,
+    "Id": "17cad22c-41c0-4ba2-b0f3-faec0d7b62a2",
+    "CreatedAt": "2026-10-25T15:45:04.0287697Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0287697Z"
+  },
+  {
+    "User": {
+      "Username": "beaulah_corwin",
+      "Password": "pass277744",
+      "Email": "mallie@kovacekbeer.us",
+      "BankAccounts": [],
+      "Id": "2c1b9f22-7779-4bd3-b758-b472c48d1baf",
+      "CreatedAt": "2026-10-25T15:45:03.9616432Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9616432Z"
+    },
+    "UserId": "2c1b9f22-7779-4bd3-b758-b472c48d1baf",
+    "RiskScore": 2,
+    "KycStatus": "Pending",
+    "InternalNote": "Impedit perferendis suscipit ex et.",
+    "IsFlagged": false,
+    "Id": "311ee0b5-9885-4bc5-81db-c8f650c55ef8",
+    "CreatedAt": "2026-10-25T15:45:04.0287875Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0287875Z"
+  },
+  {
+    "User": {
+      "Username": "chaya.rosenbaum",
+      "Password": "pass700494",
+      "Email": "trey@gorczany.com",
+      "BankAccounts": [],
+      "Id": "5a3d0be5-6c53-4b44-a125-38c981f6f38d",
+      "CreatedAt": "2026-10-25T15:45:03.9617408Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9617408Z"
+    },
+    "UserId": "5a3d0be5-6c53-4b44-a125-38c981f6f38d",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Omnis non enim numquam et architecto aspernatur nihil et.",
+    "IsFlagged": false,
+    "Id": "7ae9959c-8fa9-4ffe-96ae-0dcb1b38d78d",
+    "CreatedAt": "2026-10-25T15:45:04.0288052Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0288052Z"
+  },
+  {
+    "User": {
+      "Username": "roman_boyer",
+      "Password": "pass275598",
+      "Email": "esperanza_halvorson@hudson.ca",
+      "BankAccounts": [],
+      "Id": "3805a6bc-5898-40b1-bd20-1e66248bedc1",
+      "CreatedAt": "2026-10-25T15:45:03.9618318Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9618318Z"
+    },
+    "UserId": "3805a6bc-5898-40b1-bd20-1e66248bedc1",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Velit non illum dolor atque officia recusandae sed voluptatibus maxime.",
+    "IsFlagged": false,
+    "Id": "f5d2ad86-0195-48ba-94f1-07764339e71a",
+    "CreatedAt": "2026-10-25T15:45:04.028836Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0288361Z"
+  },
+  {
+    "User": {
+      "Username": "carmelo",
+      "Password": "pass586139",
+      "Email": "ardith@bashirianmayer.ca",
+      "BankAccounts": [],
+      "Id": "f5089ffd-de83-4509-86e9-d6691935d025",
+      "CreatedAt": "2026-10-25T15:45:03.9619425Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9619425Z"
+    },
+    "UserId": "f5089ffd-de83-4509-86e9-d6691935d025",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Dolor quas aut quas.",
+    "IsFlagged": false,
+    "Id": "c5a64294-abc8-4c99-81a4-70232fbe0637",
+    "CreatedAt": "2026-10-25T15:45:04.0288718Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0288719Z"
+  },
+  {
+    "User": {
+      "Username": "adelbert",
+      "Password": "pass379895",
+      "Email": "waylon@hyatt.biz",
+      "BankAccounts": [],
+      "Id": "2bf3a267-dee7-434e-9327-855d5ac7b6af",
+      "CreatedAt": "2026-10-25T15:45:03.9620327Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9620328Z"
+    },
+    "UserId": "2bf3a267-dee7-434e-9327-855d5ac7b6af",
+    "RiskScore": 2,
+    "KycStatus": "Pending",
+    "InternalNote": "Non natus neque totam qui ut voluptas consequatur veritatis ut.",
+    "IsFlagged": true,
+    "Id": "70832b2b-c8fd-4aa9-84ab-1afad2369b20",
+    "CreatedAt": "2026-10-25T15:45:04.0288866Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0288866Z"
+  },
+  {
+    "User": {
+      "Username": "melvina.koss",
+      "Password": "pass536167",
+      "Email": "arianna@kohlerbeahan.biz",
+      "BankAccounts": [],
+      "Id": "b951aba3-8874-42dc-8ff7-de9f11b99ed7",
+      "CreatedAt": "2026-10-25T15:45:03.9621164Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9621164Z"
+    },
+    "UserId": "b951aba3-8874-42dc-8ff7-de9f11b99ed7",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Cupiditate at error nulla distinctio.",
+    "IsFlagged": true,
+    "Id": "c374c792-8ae6-434d-a87d-4ada34a8c534",
+    "CreatedAt": "2026-10-25T15:45:04.0289221Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0289222Z"
+  },
+  {
+    "User": {
+      "Username": "misty",
+      "Password": "pass252413",
+      "Email": "camilla_farrell@conn.info",
+      "BankAccounts": [],
+      "Id": "14d710a8-90c5-4869-b191-62d11a6ca76a",
+      "CreatedAt": "2026-10-25T15:45:03.9622127Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9622127Z"
+    },
+    "UserId": "14d710a8-90c5-4869-b191-62d11a6ca76a",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Eligendi tenetur dolorem sunt qui ipsa non aliquid voluptatem at.",
+    "IsFlagged": false,
+    "Id": "0a6ee953-a192-481f-8d4c-cd565478d3ae",
+    "CreatedAt": "2026-10-25T15:45:04.0289401Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0289401Z"
+  },
+  {
+    "User": {
+      "Username": "destin.price",
+      "Password": "pass354350",
+      "Email": "ivory@kozeybartell.name",
+      "BankAccounts": [],
+      "Id": "e543ee06-8cd8-4b50-8d0b-7f1c673e8ba7",
+      "CreatedAt": "2026-10-25T15:45:03.9623463Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9623464Z"
+    },
+    "UserId": "e543ee06-8cd8-4b50-8d0b-7f1c673e8ba7",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Rerum voluptate et quod amet fugiat nihil voluptas excepturi dolore.",
+    "IsFlagged": false,
+    "Id": "2c195836-563f-44b8-a392-894cf4c5ddd7",
+    "CreatedAt": "2026-10-25T15:45:04.0289749Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0289749Z"
+  },
+  {
+    "User": {
+      "Username": "devon_marks",
+      "Password": "pass872487",
+      "Email": "dawson_bahringer@keelinglarson.us",
+      "BankAccounts": [],
+      "Id": "9fa89238-0557-46e0-9b44-143ba84da69a",
+      "CreatedAt": "2026-10-25T15:45:03.9624756Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9624757Z"
+    },
+    "UserId": "9fa89238-0557-46e0-9b44-143ba84da69a",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Sunt aut vitae sunt incidunt quia ipsum ea.",
+    "IsFlagged": false,
+    "Id": "d3c61b8c-bb52-42a7-a697-1557682ca6ee",
+    "CreatedAt": "2026-10-25T15:45:04.0290086Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0290086Z"
+  },
+  {
+    "User": {
+      "Username": "dangelo.damore",
+      "Password": "pass698932",
+      "Email": "reese@hilllwolf.name",
+      "BankAccounts": [],
+      "Id": "3fc39c1e-0a27-49ac-9d9c-c3bc16d1f254",
+      "CreatedAt": "2026-10-25T15:45:03.962615Z",
+      "UpdatedAt": "2026-10-25T15:45:03.962615Z"
+    },
+    "UserId": "3fc39c1e-0a27-49ac-9d9c-c3bc16d1f254",
+    "RiskScore": 2,
+    "KycStatus": "Pending",
+    "InternalNote": "Optio perspiciatis ea non sint eius nulla.",
+    "IsFlagged": false,
+    "Id": "d55b16cb-4aa8-49f6-9065-ae39162dd04f",
+    "CreatedAt": "2026-10-25T15:45:04.0290368Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0290368Z"
+  },
+  {
+    "User": {
+      "Username": "marilou",
+      "Password": "pass473389",
+      "Email": "juvenal@gislason.name",
+      "BankAccounts": [],
+      "Id": "aebce2b7-f729-4276-b0e8-43257924f3d9",
+      "CreatedAt": "2026-10-25T15:45:03.9627438Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9627439Z"
+    },
+    "UserId": "aebce2b7-f729-4276-b0e8-43257924f3d9",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Vel enim corrupti dolores.",
+    "IsFlagged": true,
+    "Id": "918eca60-5a52-41d2-8942-23640068ae65",
+    "CreatedAt": "2026-10-25T15:45:04.0290644Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0290644Z"
+  },
+  {
+    "User": {
+      "Username": "benedict",
+      "Password": "pass880414",
+      "Email": "elmira@hyattcollins.ca",
+      "BankAccounts": [],
+      "Id": "ae4dbf9e-29d9-44dc-a3f3-d1bcc9d67419",
+      "CreatedAt": "2026-10-25T15:45:03.9630178Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9630178Z"
+    },
+    "UserId": "ae4dbf9e-29d9-44dc-a3f3-d1bcc9d67419",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Voluptatem mollitia aut maxime reiciendis non omnis aut.",
+    "IsFlagged": false,
+    "Id": "291b2740-2c39-44a0-9539-7b7ac6d570aa",
+    "CreatedAt": "2026-10-25T15:45:04.0290794Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0290795Z"
+  },
+  {
+    "User": {
+      "Username": "lillian.kassulke",
+      "Password": "pass212866",
+      "Email": "adeline.beer@mitchell.name",
+      "BankAccounts": [],
+      "Id": "a94a496e-2096-4b92-842f-ae8e5432baff",
+      "CreatedAt": "2026-10-25T15:45:03.9631547Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9631547Z"
+    },
+    "UserId": "a94a496e-2096-4b92-842f-ae8e5432baff",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Totam nobis et nihil maiores inventore mollitia qui perspiciatis ipsam.",
+    "IsFlagged": false,
+    "Id": "6586ce1b-456f-4a08-8f94-df6ac3380c32",
+    "CreatedAt": "2026-10-25T15:45:04.0291072Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0291073Z"
+  },
+  {
+    "User": {
+      "Username": "lenora",
+      "Password": "pass790198",
+      "Email": "gerda@gaylord.us",
+      "BankAccounts": [],
+      "Id": "3f7e0fb6-915d-4d9f-8be4-021165ab28b9",
+      "CreatedAt": "2026-10-25T15:45:03.9632669Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9632669Z"
+    },
+    "UserId": "3f7e0fb6-915d-4d9f-8be4-021165ab28b9",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Delectus quos eius quis voluptatem id magnam.",
+    "IsFlagged": true,
+    "Id": "1fad47c6-cde5-48ac-b4e6-f7127390c689",
+    "CreatedAt": "2026-10-25T15:45:04.0291421Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0291422Z"
+  },
+  {
+    "User": {
+      "Username": "malvina",
+      "Password": "pass865026",
+      "Email": "ford.bogan@wittingdooley.com",
+      "BankAccounts": [],
+      "Id": "a64a330a-12c5-48fe-aa63-25e98e971836",
+      "CreatedAt": "2026-10-25T15:45:03.9633536Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9633536Z"
+    },
+    "UserId": "a64a330a-12c5-48fe-aa63-25e98e971836",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "Sit expedita nisi porro neque qui dolores minus earum.",
+    "IsFlagged": false,
+    "Id": "34830015-3afc-4e3d-b886-fc9dd78a6c21",
+    "CreatedAt": "2026-10-25T15:45:04.0291672Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0291672Z"
+  },
+  {
+    "User": {
+      "Username": "rupert",
+      "Password": "pass608399",
+      "Email": "citlalli.koepp@jacobson.com",
+      "BankAccounts": [],
+      "Id": "b12da528-11f6-4d01-80f0-292b02221934",
+      "CreatedAt": "2026-10-25T15:45:03.9634591Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9634591Z"
+    },
+    "UserId": "b12da528-11f6-4d01-80f0-292b02221934",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Est ea laboriosam et aut et porro illum earum aspernatur.",
+    "IsFlagged": true,
+    "Id": "28ade478-c059-4aa8-8123-228e2c7fe153",
+    "CreatedAt": "2026-10-25T15:45:04.0291984Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0291984Z"
+  },
+  {
+    "User": {
+      "Username": "norberto",
+      "Password": "pass635500",
+      "Email": "hillary@ortiz.co.uk",
+      "BankAccounts": [],
+      "Id": "2acdd131-758b-493d-9703-1153091e3ab2",
+      "CreatedAt": "2026-10-25T15:45:03.9635523Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9635523Z"
+    },
+    "UserId": "2acdd131-758b-493d-9703-1153091e3ab2",
+    "RiskScore": 1,
+    "KycStatus": "Pending",
+    "InternalNote": "Provident et nam ut nesciunt quibusdam.",
+    "IsFlagged": false,
+    "Id": "96c3ba9f-5273-4b58-9567-4940a8016f05",
+    "CreatedAt": "2026-10-25T15:45:04.0292336Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0292336Z"
+  },
+  {
+    "User": {
+      "Username": "dessie.labadie",
+      "Password": "pass787251",
+      "Email": "hardy@hagenesschamberger.uk",
+      "BankAccounts": [],
+      "Id": "a2efb1c6-36df-45fb-9b93-a8612b33e441",
+      "CreatedAt": "2026-10-25T15:45:03.9636386Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9636386Z"
+    },
+    "UserId": "a2efb1c6-36df-45fb-9b93-a8612b33e441",
+    "RiskScore": 2,
+    "KycStatus": "Pending",
+    "InternalNote": "Voluptatem repudiandae error aliquam quo consequatur quo aspernatur nulla.",
+    "IsFlagged": true,
+    "Id": "2541034f-c0bc-454d-90f9-aee425f7a572",
+    "CreatedAt": "2026-10-25T15:45:04.0292549Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0292549Z"
+  },
+  {
+    "User": {
+      "Username": "alden",
+      "Password": "pass550971",
+      "Email": "ewald@hilpert.info",
+      "BankAccounts": [],
+      "Id": "6b31a3c0-93f4-4371-a50c-0bfbe039f091",
+      "CreatedAt": "2026-10-25T15:45:03.9637382Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9637382Z"
+    },
+    "UserId": "6b31a3c0-93f4-4371-a50c-0bfbe039f091",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "At consequatur officia maiores soluta architecto ut voluptatem sed nesciunt.",
+    "IsFlagged": false,
+    "Id": "4438fd6e-da00-4f6f-a287-cbce0cdc04fb",
+    "CreatedAt": "2026-10-25T15:45:04.0292869Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0292869Z"
+  },
+  {
+    "User": {
+      "Username": "gage",
+      "Password": "pass199990",
+      "Email": "charity@ornnolan.us",
+      "BankAccounts": [],
+      "Id": "fdf35240-8b08-450b-b1df-4e24b3704460",
+      "CreatedAt": "2026-10-25T15:45:03.9638366Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9638366Z"
+    },
+    "UserId": "fdf35240-8b08-450b-b1df-4e24b3704460",
+    "RiskScore": 2,
+    "KycStatus": "Pending",
+    "InternalNote": "Esse sint quia delectus ut totam.",
+    "IsFlagged": false,
+    "Id": "92810aa3-9da7-4791-9efb-64ab85a4ab7c",
+    "CreatedAt": "2026-10-25T15:45:04.0293558Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0293558Z"
+  },
+  {
+    "User": {
+      "Username": "emery.rutherford",
+      "Password": "pass59324",
+      "Email": "nestor_leffler@barrowstremblay.uk",
+      "BankAccounts": [],
+      "Id": "872c1508-9a8f-497f-a6ca-cf42d1b74158",
+      "CreatedAt": "2026-10-25T15:45:03.9639298Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9639298Z"
+    },
+    "UserId": "872c1508-9a8f-497f-a6ca-cf42d1b74158",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Ex dignissimos laudantium error.",
+    "IsFlagged": true,
+    "Id": "8ad3bccf-7141-4411-8f6c-bfd715f9b982",
+    "CreatedAt": "2026-10-25T15:45:04.0293785Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0293785Z"
+  },
+  {
+    "User": {
+      "Username": "jedidiah.shields",
+      "Password": "pass739413",
+      "Email": "nyah.boehm@spencer.co.uk",
+      "BankAccounts": [],
+      "Id": "98496c38-564e-4cd7-bdbb-46c8bdc0fb0b",
+      "CreatedAt": "2026-10-25T15:45:03.9644128Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9644128Z"
+    },
+    "UserId": "98496c38-564e-4cd7-bdbb-46c8bdc0fb0b",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Veniam rem sit omnis.",
+    "IsFlagged": false,
+    "Id": "3449389b-99da-4c4d-b6d4-b919041c5a2d",
+    "CreatedAt": "2026-10-25T15:45:04.0293928Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0293928Z"
+  },
+  {
+    "User": {
+      "Username": "katelynn",
+      "Password": "pass476989",
+      "Email": "audrey@blockpaucek.info",
+      "BankAccounts": [],
+      "Id": "65f4b0ae-f7a0-4306-88e8-345d99ba9dd9",
+      "CreatedAt": "2026-10-25T15:45:03.9645222Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9645222Z"
+    },
+    "UserId": "65f4b0ae-f7a0-4306-88e8-345d99ba9dd9",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Recusandae quis voluptatem magni.",
+    "IsFlagged": false,
+    "Id": "0483c7b6-4977-4a28-af18-129134d17b54",
+    "CreatedAt": "2026-10-25T15:45:04.029408Z",
+    "UpdatedAt": "2026-10-25T15:45:04.029408Z"
+  },
+  {
+    "User": {
+      "Username": "haven_roberts",
+      "Password": "pass909387",
+      "Email": "evie.gibson@rolfsonlueilwitz.us",
+      "BankAccounts": [],
+      "Id": "e69f484f-9052-4d42-878c-f90c00f1e9ae",
+      "CreatedAt": "2026-10-25T15:45:03.9646128Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9646128Z"
+    },
+    "UserId": "e69f484f-9052-4d42-878c-f90c00f1e9ae",
+    "RiskScore": 3,
+    "KycStatus": "Pending",
+    "InternalNote": "Eos error nemo quia.",
+    "IsFlagged": false,
+    "Id": "85fb9e2f-8bee-4dd5-ac62-f7853df4fef0",
+    "CreatedAt": "2026-10-25T15:45:04.0294227Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0294227Z"
+  },
+  {
+    "User": {
+      "Username": "gussie",
+      "Password": "pass619772",
+      "Email": "lillian@goodwin.us",
+      "BankAccounts": [],
+      "Id": "7760b861-fb74-410b-8113-a054a63d7344",
+      "CreatedAt": "2026-10-25T15:45:03.9647159Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9647159Z"
+    },
+    "UserId": "7760b861-fb74-410b-8113-a054a63d7344",
+    "RiskScore": 5,
+    "KycStatus": "Pending",
+    "InternalNote": "A nam natus et unde.",
+    "IsFlagged": false,
+    "Id": "7f8664a3-5857-44c4-8dd3-f1d6a3984d29",
+    "CreatedAt": "2026-10-25T15:45:04.0294374Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0294374Z"
+  },
+  {
+    "User": {
+      "Username": "miracle.veum",
+      "Password": "pass315813",
+      "Email": "armand@white.name",
+      "BankAccounts": [],
+      "Id": "8114cb7c-bf77-45f9-9bc1-35fcb614c0f4",
+      "CreatedAt": "2026-10-25T15:45:03.9648125Z",
+      "UpdatedAt": "2026-10-25T15:45:03.9648125Z"
+    },
+    "UserId": "8114cb7c-bf77-45f9-9bc1-35fcb614c0f4",
+    "RiskScore": 2,
+    "KycStatus": "Pending",
+    "InternalNote": "Eos explicabo exercitationem ullam voluptas temporibus rerum tenetur sit.",
+    "IsFlagged": false,
+    "Id": "b5b031bd-792f-4b93-bd27-7e6538933393",
+    "CreatedAt": "2026-10-25T15:45:04.0294561Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0294562Z"
+  },
+  {
+    "User": {
+      "Username": "abigayle",
+      "Password": "pass129915",
+      "Email": "franz@grady.biz",
+      "BankAccounts": [],
+      "Id": "173b66f4-df80-4fe0-b268-dde11b46c208",
+      "CreatedAt": "2026-10-25T15:45:03.964917Z",
+      "UpdatedAt": "2026-10-25T15:45:03.964917Z"
+    },
+    "UserId": "173b66f4-df80-4fe0-b268-dde11b46c208",
+    "RiskScore": 4,
+    "KycStatus": "Pending",
+    "InternalNote": "Veritatis ut qui dolores.",
+    "IsFlagged": false,
+    "Id": "bb803bf4-0345-4710-81a7-4c8814ff020e",
+    "CreatedAt": "2026-10-25T15:45:04.0294877Z",
+    "UpdatedAt": "2026-10-25T15:45:04.0294878Z"
+  }
+]

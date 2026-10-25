@@ -1,5 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 
+
+namespace Models.Entity;
+
 /// <summary>
 /// Represents a user in the system.
 /// </summary>

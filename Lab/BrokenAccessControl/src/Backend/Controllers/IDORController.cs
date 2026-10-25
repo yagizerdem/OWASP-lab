@@ -1,16 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-
+using Models.Entity;
 namespace backend.Controllers;
 
 [ApiController]
 [Route("lab/[controller]")]
-public class BrokenAccessController : ControllerBase
+public class IDORController : ControllerBase
 {
 
   private readonly AppDbContext _context;
 
-  public BrokenAccessController(AppDbContext context)
+  public IDORController(AppDbContext context)
   {
     _context = context;
   }
@@ -24,9 +23,6 @@ public class BrokenAccessController : ControllerBase
   [ProducesResponseType(StatusCodes.Status403Forbidden)]
   public async Task<IActionResult> Get([FromRoute] Guid userId)
   {
-
-    Console.WriteLine($"Retrieving accounts for userId: {userId}");
-
     List<BankAccountEntity> accounts = _context.BankAccounts.Where(b => b.OwnerId == userId).ToList();
     return Ok(ApiResponse.Ok(accounts));
 
