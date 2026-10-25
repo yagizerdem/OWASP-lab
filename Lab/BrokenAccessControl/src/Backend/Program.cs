@@ -1,5 +1,6 @@
 using Newtonsoft.Json;
 using Microsoft.EntityFrameworkCore;
+using Middlewares.Exceptions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,16 +23,24 @@ builder.Services.AddOpenApi("OWASP-lab-API", options =>
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddScoped<ExceptionHandlingMiddleware>();
+
 
 var app = builder.Build();
 
+// Apply pending migrations automatically
 using (var scope = app.Services.CreateScope())
 {
+  var db = scope.ServiceProvider
+      .GetRequiredService<AppDbContext>();
 
+  await db.Database.MigrateAsync();
+}
+
+using (var scope = app.Services.CreateScope())
+{
   SeedUser.Seed(scope.ServiceProvider.GetRequiredService<AppDbContext>());
   SeedBankAccount.Seed(scope.ServiceProvider.GetRequiredService<AppDbContext>());
-
-
 }
 
 
@@ -42,6 +51,8 @@ if (app.Environment.IsDevelopment())
   app.UseSwagger();
   app.UseSwaggerUI();
 }
+
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
 

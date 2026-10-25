@@ -1,6 +1,7 @@
 
-
 using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Models.Entity;
 
 public class BankAccountEntity : BaseEntity
 {

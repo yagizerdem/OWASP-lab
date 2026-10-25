@@ -1,6 +1,7 @@
 using System.Security.Cryptography;
 
 using Newtonsoft.Json;
+using Models.Entity;
 
 public class SeedBankAccount
 {

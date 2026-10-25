@@ -1,5 +1,5 @@
 using Newtonsoft.Json;
-
+using Models.Entity;
 public class SeedUser
 {
   public static void Seed(AppDbContext context)

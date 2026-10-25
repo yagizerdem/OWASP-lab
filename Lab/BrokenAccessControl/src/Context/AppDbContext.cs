@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-
+using Models.Entity;
 
 public class AppDbContext : DbContext
 {
