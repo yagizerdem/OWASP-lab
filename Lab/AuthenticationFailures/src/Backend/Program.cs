@@ -7,6 +7,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 builder.Services.AddOpenApi("OWASP-lab-API", options =>
 {
   options.ShouldInclude = (description) =>

@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Scripts/" />
+  <Project Path="src/Backend/Backend.csproj" />
+  <Project Path="src/Context/Context.csproj" />
+  <Project Path="src/Models/Models.csproj" />
+  <Project Path="src/Scripts/DummyData/DummyData.csproj" />
+</Solution>
