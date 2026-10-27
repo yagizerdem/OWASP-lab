@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
 namespace backend.Controllers;
@@ -11,6 +12,7 @@ using Models.DTO;
 using Models.Entity;
 
 [ApiController]
+[AllowAnonymous] // intentionally weak baseline lab endpoints; the secure ones live in SecureAuthController
 [Route("lab/[controller]")]
 public class AuthController : ControllerBase
 {
