@@ -26,6 +26,20 @@ builder.Services.AddScoped<ExceptionHandlingMiddleware>();
 
 var app = builder.Build();
 
+// Apply pending migrations automatically
+using (var scope = app.Services.CreateScope())
+{
+  var db = scope.ServiceProvider
+      .GetRequiredService<AppDbContext>();
+
+  await db.Database.MigrateAsync();
+}
+
+using (var scope = app.Services.CreateScope())
+{
+  SeedUser.Seed(scope.ServiceProvider.GetRequiredService<AppDbContext>());
+}
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
