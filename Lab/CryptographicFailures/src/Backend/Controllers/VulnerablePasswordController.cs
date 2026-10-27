@@ -1,4 +1,5 @@
 using System.Security.Cryptography;
+using System.Text;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Backend.Controllers;
@@ -25,8 +26,7 @@ public class VulnerablePasswordController : ControllerBase
     }
 
 
-    string hash = MD5.HashData(System.Text.Encoding.UTF8.GetBytes(dto.Password)).ToString() ??
-      throw new AppException("Failed to hash password");
+    string hash = Convert.ToHexString(MD5.HashData(Encoding.UTF8.GetBytes(dto.Password))).ToLowerInvariant();
 
     if (hash != user.HashedPassword)
     {
