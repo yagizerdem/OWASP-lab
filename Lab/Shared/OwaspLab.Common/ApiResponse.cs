@@ -1,7 +1,7 @@
 
 using System.Net;
 
-class ApiResponse
+public class ApiResponse
 {
   public string Message { get; set; } = string.Empty;
   public object? Data { get; set; }

@@ -23,6 +23,7 @@
 
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\OwaspLab.Common\OwaspLab.Common.csproj" />
     <ProjectReference Include="..\Context\Context.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>

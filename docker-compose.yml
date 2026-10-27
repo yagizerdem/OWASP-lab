@@ -40,8 +40,8 @@ services:
     depends_on:
       - sqlserver
     build:
-      context: ./Lab/AuthenticationFailures
-      dockerfile: Dockerfile
+      context: ./Lab
+      dockerfile: AuthenticationFailures/Dockerfile
     environment:
       ASPNETCORE_URLS: http://+:5000;http://+:5001
       ASPNETCORE_ENVIRONMENT: Development
@@ -56,8 +56,8 @@ services:
       sqlserver:
         condition: service_healthy
     build:
-      context: ./Lab/BrokenAccessControl
-      dockerfile: Dockerfile
+      context: ./Lab
+      dockerfile: BrokenAccessControl/Dockerfile
     environment:
       ASPNETCORE_URLS: http://+:5010;http://+:5011
       ASPNETCORE_ENVIRONMENT: Development
@@ -73,8 +73,8 @@ services:
       sqlserver:
         condition: service_healthy
     build:
-      context: ./Lab/CryptographicFailures
-      dockerfile: Dockerfile
+      context: ./Lab
+      dockerfile: CryptographicFailures/Dockerfile
     environment:
       ASPNETCORE_URLS: http://+:5020;http://+:5021
       ASPNETCORE_ENVIRONMENT: Development
@@ -89,8 +89,8 @@ services:
       sqlserver:
         condition: service_healthy
     build:
-      context: ./Lab/Injection
-      dockerfile: Dockerfile
+      context: ./Lab
+      dockerfile: Injection/Dockerfile
     environment:
       ASPNETCORE_URLS: http://+:5030;http://+:5031
       ASPNETCORE_ENVIRONMENT: Development
@@ -105,8 +105,8 @@ services:
       sqlserver:
         condition: service_healthy
     build:
-      context: ./Lab/InsecureDesign
-      dockerfile: Dockerfile
+      context: ./Lab
+      dockerfile: InsecureDesign/Dockerfile
     environment:
       ASPNETCORE_URLS: http://+:5040;http://+:5041
       ASPNETCORE_ENVIRONMENT: Development
@@ -121,8 +121,8 @@ services:
       sqlserver:
         condition: service_healthy
     build:
-      context: ./Lab/MishandlingOfExceptionalConditions
-      dockerfile: Dockerfile
+      context: ./Lab
+      dockerfile: MishandlingOfExceptionalConditions/Dockerfile
     environment:
       ASPNETCORE_URLS: http://+:5050;http://+:5051
       ASPNETCORE_ENVIRONMENT: Development
@@ -137,8 +137,8 @@ services:
       sqlserver:
         condition: service_healthy
     build:
-      context: ./Lab/SecurityLoggingAndAlertingFailures
-      dockerfile: Dockerfile
+      context: ./Lab
+      dockerfile: SecurityLoggingAndAlertingFailures/Dockerfile
     environment:
       ASPNETCORE_URLS: http://+:5060;http://+:5061
       ASPNETCORE_ENVIRONMENT: Development
@@ -153,8 +153,8 @@ services:
       sqlserver:
         condition: service_healthy
     build:
-      context: ./Lab/SecurityMisconfiguration
-      dockerfile: Dockerfile
+      context: ./Lab
+      dockerfile: SecurityMisconfiguration/Dockerfile
     environment:
       ASPNETCORE_URLS: http://+:5070;http://+:5071
       ASPNETCORE_ENVIRONMENT: Development
@@ -169,8 +169,8 @@ services:
       sqlserver:
         condition: service_healthy
     build:
-      context: ./Lab/SoftwareOrDataIntegrityFailures
-      dockerfile: Dockerfile
+      context: ./Lab
+      dockerfile: SoftwareOrDataIntegrityFailures/Dockerfile
     environment:
       ASPNETCORE_URLS: http://+:5080;http://+:5081
       ASPNETCORE_ENVIRONMENT: Development
@@ -185,8 +185,8 @@ services:
       sqlserver:
         condition: service_healthy
     build:
-      context: ./Lab/SoftwareSupplyChainFailures
-      dockerfile: Dockerfile
+      context: ./Lab
+      dockerfile: SoftwareSupplyChainFailures/Dockerfile
     environment:
       ASPNETCORE_URLS: http://+:5090;http://+:5091
       ASPNETCORE_ENVIRONMENT: Development
