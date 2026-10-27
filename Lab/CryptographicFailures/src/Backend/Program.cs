@@ -43,6 +43,13 @@ if (app.Environment.IsDevelopment())
   app.UseSwaggerUI();
 }
 
+using (var scope = app.Services.CreateScope())
+{
+  var serviceProvider = scope.ServiceProvider;
+  SeedWeakHash.Seed(serviceProvider.GetService<AppDbContext>()
+  ?? throw new InvalidOperationException("AppDbContext not found"));
+}
+
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
