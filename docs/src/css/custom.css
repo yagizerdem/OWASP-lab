@@ -1,28 +1,61 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
 @custom-variant dark (&:is([data-theme="dark"] *));
 
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Colors follow DESIGN.light.md and DESIGN.dark.md in the repo root
+ * (Cybersecurity Workbench). Token names in comments refer to those files.
  */
 
-/* You can override the default Infima variables here. */
+/* Light theme */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* primary / primary-container */
+  --ifm-color-primary: #006c49;
+  --ifm-color-primary-dark: #006343;
+  --ifm-color-primary-darker: #005f40;
+  --ifm-color-primary-darkest: #005137;
+  --ifm-color-primary-light: #147858;
+  --ifm-color-primary-lighter: #1f7e5f;
+  --ifm-color-primary-lightest: #409176;
+
+  --ifm-color-success: #006c49;
+  --ifm-color-info: #00668a; /* tertiary */
+  --ifm-color-danger: #ba1a1a; /* error */
+  --ifm-color-warning: #b61722; /* secondary */
+
+  --ifm-background-color: #f8f9ff; /* background */
+  --ifm-background-surface-color: #ffffff; /* surface-container-lowest */
+  --ifm-font-color-base: #181c21; /* on-surface */
+  --ifm-font-color-secondary: #3c4a42; /* on-surface-variant */
+  --ifm-toc-border-color: #bbcabf; /* outline-variant */
+  --ifm-hr-background-color: #bbcabf;
+
+  --ifm-color-emphasis-0: #ffffff;
+  --ifm-color-emphasis-100: #f1f3fb; /* surface-container-low */
+  --ifm-color-emphasis-200: #ebeef5; /* surface-container */
+  --ifm-color-emphasis-300: #e0e2ea; /* surface-container-highest */
+  --ifm-color-emphasis-400: #bbcabf; /* outline-variant */
+  --ifm-color-emphasis-500: #6c7a71; /* outline */
+  --ifm-color-emphasis-600: #3c4a42; /* on-surface-variant */
+  --ifm-color-emphasis-700: #2d3136; /* inverse-surface */
+  --ifm-color-emphasis-800: #181c21;
+  --ifm-color-emphasis-900: #181c21;
+  --ifm-color-emphasis-1000: #000000;
+
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-footer-background-color: #2d3136; /* inverse-surface */
+  --ifm-footer-color: #eef1f8; /* inverse-on-surface */
+  --ifm-footer-title-color: #eef1f8;
+  --ifm-footer-link-color: #eef1f8;
+
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 108, 73, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark theme */
 [data-theme="dark"] {
+  /* primary-container (on-primary #0b0f14 text stays readable on it) */
   --ifm-color-primary: #10b981;
   --ifm-color-primary-dark: #0ea674;
   --ifm-color-primary-darker: #0e9d6e;
@@ -30,5 +63,150 @@
   --ifm-color-primary-light: #12cc8e;
   --ifm-color-primary-lighter: #12d594;
   --ifm-color-primary-lightest: #34d399;
+
+  --ifm-color-success: #4edea3; /* primary */
+  --ifm-color-info: #7bd0ff; /* tertiary */
+  --ifm-color-danger: #ffb4ab; /* error */
+  --ifm-color-warning: #ffb3ad; /* secondary */
+
+  --ifm-background-color: #101419; /* background */
+  --ifm-background-surface-color: #181c21; /* surface-container-low */
+  --ifm-font-color-base: #e0e2ea; /* on-surface */
+  --ifm-font-color-secondary: #bbcabf; /* on-surface-variant */
+  --ifm-toc-border-color: #3c4a42; /* outline-variant */
+  --ifm-hr-background-color: #3c4a42;
+
+  --ifm-color-emphasis-0: #0a0e13; /* surface-container-lowest */
+  --ifm-color-emphasis-100: #181c21; /* surface-container-low */
+  --ifm-color-emphasis-200: #1c2025; /* surface-container */
+  --ifm-color-emphasis-300: #262a30; /* surface-container-high */
+  --ifm-color-emphasis-400: #31353b; /* surface-container-highest */
+  --ifm-color-emphasis-500: #3c4a42; /* outline-variant */
+  --ifm-color-emphasis-600: #86948a; /* outline */
+  --ifm-color-emphasis-700: #bbcabf; /* on-surface-variant */
+  --ifm-color-emphasis-800: #e0e2ea;
+  --ifm-color-emphasis-900: #e0e2ea;
+  --ifm-color-emphasis-1000: #ffffff;
+
+  --ifm-navbar-background-color: #181c21;
+  --ifm-footer-background-color: #0a0e13;
+  --ifm-footer-color: #bbcabf;
+  --ifm-footer-title-color: #e0e2ea;
+  --ifm-footer-link-color: #bbcabf;
+
   --docusaurus-highlighted-code-line-bg: rgba(16, 185, 129, 0.1);
+}
+
+/* shadcn/ui tokens, mapped to the same design files */
+:root {
+  --radius: 0.5rem; /* rounded-lg */
+  --background: #f8f9ff; /* background */
+  --foreground: #181c21; /* on-surface */
+  --card: #ffffff; /* surface-container-lowest */
+  --card-foreground: #181c21;
+  --popover: #ffffff;
+  --popover-foreground: #181c21;
+  --primary: #006c49; /* primary */
+  --primary-foreground: #ffffff; /* on-primary */
+  --secondary: #ebeef5; /* surface-container */
+  --secondary-foreground: #181c21;
+  --muted: #f1f3fb; /* surface-container-low */
+  --muted-foreground: #3c4a42; /* on-surface-variant */
+  --accent: #e5e8f0; /* surface-container-high */
+  --accent-foreground: #181c21;
+  --destructive: #ba1a1a; /* error */
+  --border: #bbcabf; /* outline-variant */
+  --input: #bbcabf;
+  --ring: #006c49;
+  --chart-1: #006c49; /* primary */
+  --chart-2: #00668a; /* tertiary */
+  --chart-3: #b61722; /* secondary */
+  --chart-4: #10b981; /* primary-container */
+  --chart-5: #19aee8; /* tertiary-container */
+  --sidebar: #f1f3fb; /* surface-container-low */
+  --sidebar-foreground: #181c21;
+  --sidebar-primary: #006c49;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e5e8f0;
+  --sidebar-accent-foreground: #181c21;
+  --sidebar-border: #bbcabf;
+  --sidebar-ring: #006c49;
+}
+
+[data-theme="dark"] {
+  --background: #101419; /* background */
+  --foreground: #e0e2ea; /* on-surface */
+  --card: #181c21; /* surface-container-low */
+  --card-foreground: #e0e2ea;
+  --popover: #1c2025; /* surface-container */
+  --popover-foreground: #e0e2ea;
+  --primary: #10b981; /* primary-container */
+  --primary-foreground: #0b0f14;
+  --secondary: #262a30; /* surface-container-high */
+  --secondary-foreground: #e0e2ea;
+  --muted: #1c2025; /* surface-container */
+  --muted-foreground: #bbcabf; /* on-surface-variant */
+  --accent: #262a30; /* surface-container-high */
+  --accent-foreground: #e0e2ea;
+  --destructive: #ef4444; /* Secondary Alert / Vulnerability */
+  --border: #3c4a42; /* outline-variant */
+  --input: #3c4a42;
+  --ring: #10b981;
+  --chart-1: #4edea3; /* primary */
+  --chart-2: #7bd0ff; /* tertiary */
+  --chart-3: #ffb3ad; /* secondary */
+  --chart-4: #10b981; /* primary-container */
+  --chart-5: #19aee8; /* tertiary-container */
+  --sidebar: #0a0e13; /* surface-container-lowest */
+  --sidebar-foreground: #e0e2ea;
+  --sidebar-primary: #10b981;
+  --sidebar-primary-foreground: #0b0f14;
+  --sidebar-accent: #262a30;
+  --sidebar-accent-foreground: #e0e2ea;
+  --sidebar-border: #3c4a42;
+  --sidebar-ring: #10b981;
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
 }
