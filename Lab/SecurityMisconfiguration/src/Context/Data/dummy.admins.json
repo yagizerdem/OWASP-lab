@@ -1,0 +1,20 @@
+[
+  {
+    "Username": "admin",
+    "Password": "admin",
+    "Role": "Admin",
+    "IsDefaultPassword": true
+  },
+  {
+    "Username": "support",
+    "Password": "support123",
+    "Role": "Support",
+    "IsDefaultPassword": true
+  },
+  {
+    "Username": "ops",
+    "Password": "Ops-a4e983b3d9bc4be79f039b2581b6445c",
+    "Role": "Admin",
+    "IsDefaultPassword": false
+  }
+]
