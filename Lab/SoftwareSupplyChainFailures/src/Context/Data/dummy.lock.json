@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "acme-logger",
+    "Version": "1.3.0",
+    "Sha256": "e89689168029e21dbcffef9e75ef4ad7f4102345260a36e8f84ebec23d4cfb11"
+  },
+  {
+    "Name": "acme-auth",
+    "Version": "2.0.1",
+    "Sha256": "4c82f8c2efa15eae5aae1a7dd265a666bcf9aa2aa2760d2bb82f4d925afa50cb"
+  },
+  {
+    "Name": "json-parser",
+    "Version": "3.1.0",
+    "Sha256": "95256260589832c7a233d3a3995259e7493514e530ebe4601cd303d5baeb60e0"
+  }
+]
