@@ -21,4 +21,7 @@ public class UserEntity : BaseEntity
   [Range(0, 150)]
   public int age { get; set; }
 
+  [Required]
+  public string SecurityAnswer { get; set; } = null!;
+
 }

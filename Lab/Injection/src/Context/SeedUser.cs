@@ -48,7 +48,8 @@ public class SeedUser
         Username = Faker.Internet.UserName(),
         Password = $"pass{Faker.RandomNumber.Next(10000, 1000000)}",
         Email = Faker.Internet.Email(),
-        age = Faker.RandomNumber.Next(18, 70)
+        age = Faker.RandomNumber.Next(18, 70),
+        SecurityAnswer = Faker.Name.Last().ToLowerInvariant()
       };
 
       users.Add(user);
