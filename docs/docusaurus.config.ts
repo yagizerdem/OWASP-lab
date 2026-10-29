@@ -122,6 +122,10 @@ const config: Config = {
     },
   } satisfies Preset.ThemeConfig,
 
+  stylesheets: [
+    "https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=JetBrains+Mono:wght@400..700&display=swap",
+  ],
+
   plugins: ["./src/plugins/tailwind-config.js"],
 };
 

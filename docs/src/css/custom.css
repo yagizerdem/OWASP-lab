@@ -167,6 +167,42 @@
   --sidebar-ring: #10b981;
 }
 
+/* Extra design tokens used by the landing page (see DESIGN.*.md) */
+:root {
+  --surface-lowest: #ffffff; /* surface-container-lowest */
+  --surface-low: #f1f3fb; /* surface-container-low */
+  --surface-container: #ebeef5; /* surface-container */
+  --surface-high: #e5e8f0; /* surface-container-high */
+  --surface-highest: #e0e2ea; /* surface-container-highest */
+  --outline: #6c7a71; /* outline */
+  --tertiary: #00668a; /* tertiary */
+  --alert: #b61722; /* secondary (vulnerability red) */
+}
+
+[data-theme="dark"] {
+  --surface-lowest: #0a0e13;
+  --surface-low: #181c21;
+  --surface-container: #1c2025;
+  --surface-high: #262a30;
+  --surface-highest: #31353b;
+  --outline: #86948a;
+  --tertiary: #7bd0ff;
+  --alert: #ffb3ad;
+}
+
+@theme inline {
+  --font-display: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --color-surface-lowest: var(--surface-lowest);
+  --color-surface-low: var(--surface-low);
+  --color-surface-container: var(--surface-container);
+  --color-surface-high: var(--surface-high);
+  --color-surface-highest: var(--surface-highest);
+  --color-outline: var(--outline);
+  --color-tertiary: var(--tertiary);
+  --color-alert: var(--alert);
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
