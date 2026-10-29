@@ -1,6 +1,1 @@
 @backend_HostAddress = http://localhost:3000
-
-GET {{backend_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

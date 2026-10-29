@@ -45,6 +45,7 @@ services:
     environment:
       ASPNETCORE_URLS: http://+:5000;http://+:5001
       ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=AuthenticationFailures_LAB;User Id=sa;Password=12345aA!;TrustServerCertificate=True"
     networks:
       - env_net
     ports:
@@ -78,6 +79,7 @@ services:
     environment:
       ASPNETCORE_URLS: http://+:5020;http://+:5021
       ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=CryptographicFailures_LAB;User Id=sa;Password=12345aA!;TrustServerCertificate=True"
     networks:
       - env_net
     ports:
@@ -94,6 +96,7 @@ services:
     environment:
       ASPNETCORE_URLS: http://+:5030;http://+:5031
       ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=Injection_LAB;User Id=sa;Password=12345aA!;TrustServerCertificate=True"
     networks:
       - env_net
     ports:
@@ -110,6 +113,7 @@ services:
     environment:
       ASPNETCORE_URLS: http://+:5040;http://+:5041
       ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=InsecureDesign_LAB;User Id=sa;Password=12345aA!;TrustServerCertificate=True"
     networks:
       - env_net
     ports:
@@ -126,6 +130,7 @@ services:
     environment:
       ASPNETCORE_URLS: http://+:5050;http://+:5051
       ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=MishandlingOfExceptionalConditions_LAB;User Id=sa;Password=12345aA!;TrustServerCertificate=True"
     networks:
       - env_net
     ports:
@@ -142,6 +147,7 @@ services:
     environment:
       ASPNETCORE_URLS: http://+:5060;http://+:5061
       ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=SecurityLoggingAndAlertingFailures_LAB;User Id=sa;Password=12345aA!;TrustServerCertificate=True"
     networks:
       - env_net
     ports:
@@ -158,6 +164,7 @@ services:
     environment:
       ASPNETCORE_URLS: http://+:5070;http://+:5071
       ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=SecurityMisconfiguration_LAB;User Id=sa;Password=12345aA!;TrustServerCertificate=True"
     networks:
       - env_net
     ports:
@@ -174,6 +181,7 @@ services:
     environment:
       ASPNETCORE_URLS: http://+:5080;http://+:5081
       ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=SoftwareOrDataIntegrityFailures_LAB;User Id=sa;Password=12345aA!;TrustServerCertificate=True"
     networks:
       - env_net
     ports:
@@ -190,6 +198,7 @@ services:
     environment:
       ASPNETCORE_URLS: http://+:5090;http://+:5091
       ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=SoftwareSupplyChainFailures_LAB;User Id=sa;Password=12345aA!;TrustServerCertificate=True"
     networks:
       - env_net
     ports:
