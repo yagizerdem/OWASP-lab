@@ -25,6 +25,23 @@ builder.Services.AddScoped<ExceptionHandlingMiddleware>();
 
 var app = builder.Build();
 
+// Apply pending migrations automatically
+using (var scope = app.Services.CreateScope())
+{
+  var db = scope.ServiceProvider
+      .GetRequiredService<AppDbContext>();
+
+  await db.Database.MigrateAsync();
+}
+
+using (var scope = app.Services.CreateScope())
+{
+  var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+  SeedUser.Seed(db);
+  SeedOrder.Seed(db);
+  SeedTrustedPlugin.Seed(db);
+}
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -34,6 +51,13 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
+
+// Keep the request body readable after model binding so the secure webhook can verify its signature.
+app.Use(async (context, next) =>
+{
+  context.Request.EnableBuffering();
+  await next();
+});
 
 app.UseHttpsRedirection();
 

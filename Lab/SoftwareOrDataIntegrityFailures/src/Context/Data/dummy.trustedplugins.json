@@ -1,0 +1,14 @@
+[
+  {
+    "Name": "report-export",
+    "Version": "1.0.0",
+    "Sha256": "72b16e924350854e62349e416190746df3ebf5bac8a4fe83dde3032a5cdb7a96",
+    "ContentBase64": "ZXhwb3J0IGZ1bmN0aW9uIHJ1bihkYXRhKSB7IHJldHVybiB0b0NzdihkYXRhKTsgfQ=="
+  },
+  {
+    "Name": "theme-dark",
+    "Version": "2.1.0",
+    "Sha256": "6da1d4a2b5b55c60ca0be7c96e9f9f1475da1cf2ac483d5a34230878d134a850",
+    "ContentBase64": "ZXhwb3J0IGNvbnN0IHRoZW1lID0geyBiYWNrZ3JvdW5kOiAnIzExMScsIHRleHQ6ICcjZWVlJyB9Ow=="
+  }
+]
