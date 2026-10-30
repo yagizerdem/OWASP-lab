@@ -53,8 +53,8 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 108, 73, 0.1);
 }
 
-/* Dark theme */
-[data-theme="dark"] {
+/* Dark theme. Selector is html[data-theme] so it outranks Infima's own unlayered html[data-theme=dark] block. */
+html[data-theme="dark"] {
   /* primary-container (on-primary #0b0f14 text stays readable on it) */
   --ifm-color-primary: #10b981;
   --ifm-color-primary-dark: #0ea674;
@@ -140,7 +140,7 @@
 }
 
 /* Docusaurus switches themes with data-theme; .dark is kept for shadcn tooling. */
-[data-theme="dark"],
+html[data-theme="dark"],
 .dark {
   --background: #101419; /* background */
   --foreground: #e0e2ea; /* on-background */
@@ -189,7 +189,7 @@
   --alert: #b61722; /* secondary (vulnerability red) */
 }
 
-[data-theme="dark"],
+html[data-theme="dark"],
 .dark {
   --surface-lowest: #0a0e13;
   --surface-low: #181c21;
@@ -254,4 +254,30 @@
   * {
     @apply border-border outline-ring/50;
   }
+}
+
+/* Browser surfaces themed from the palette */
+::selection {
+  background: color-mix(in srgb, var(--primary) 28%, transparent);
+  color: var(--foreground);
+}
+
+html {
+  scrollbar-color: var(--outline) var(--background);
+  scrollbar-width: thin;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/*
+ * Infima's `a:hover` rule is not inside a cascade layer, so it beats every
+ * Tailwind utility. Keep shadcn buttons and landing-page row links from
+ * turning into underlined link-colored text on hover.
+ */
+a[data-slot="button"]:hover,
+a[data-row-link]:hover {
+  text-decoration: none;
 }

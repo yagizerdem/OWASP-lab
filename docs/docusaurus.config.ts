@@ -101,7 +101,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Educational use only. Copyright © ${new Date().getFullYear()} OWASP security lab.`,
     },
     prism: {
       theme: prismThemes.github,

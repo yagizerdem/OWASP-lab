@@ -5,6 +5,13 @@ import { CLONE_COMMAND, LABS, REPO_URL } from "./data";
 
 const PREVIEW_LABS = [LABS[0], LABS[1], LABS[4]];
 
+/** The page's one authored motion: the compose output prints in line by line. */
+const reveal = (step: number) => ({
+  className:
+    "animate-in fade-in duration-500 fill-mode-backwards motion-reduce:animate-none",
+  style: { animationDelay: `${300 + step * 160}ms` },
+});
+
 export function TerminalCard() {
   const [copied, setCopied] = useState(false);
   const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
@@ -22,24 +29,28 @@ export function TerminalCard() {
     }
   };
 
+  const rows = [
+    { name: "sqlserver", status: "healthy", ok: true },
+    ...PREVIEW_LABS.map((lab) => ({
+      name: lab.folder.toLowerCase(),
+      status: `:${lab.port}`,
+      ok: false,
+    })),
+  ];
+
   return (
     <div>
-      <div className="overflow-hidden rounded-xl border border-surface-highest bg-surface-lowest shadow-xl">
-        <div className="flex items-center justify-between border-b border-surface-highest bg-surface-low px-4 py-2.5">
-          <div className="flex items-center gap-2">
-            <span className="size-3 rounded-full bg-alert" />
-            <span className="size-3 rounded-full bg-surface-highest" />
-            <span className="size-3 rounded-full bg-primary" />
-            <span className="ml-2 font-mono text-[11px] text-outline">
-              bash ~ OWASP-lab
-            </span>
-          </div>
+      <div className="overflow-hidden rounded-xl border border-surface-highest bg-surface-lowest shadow-[0_12px_32px_-12px_rgba(0,0,0,0.25)]">
+        <div className="flex items-center justify-between border-b border-surface-highest bg-surface-low px-4 py-2">
+          <span className="font-mono text-xs text-muted-foreground">
+            bash ~ OWASP-lab
+          </span>
           <Button
             variant="ghost"
             size="xs"
             onClick={copy}
             aria-label="Copy the clone and start commands"
-            className="font-mono text-[11px] text-muted-foreground"
+            className="font-mono text-xs text-muted-foreground"
           >
             {copied ? <Check /> : <Copy />}
             {copied ? "Copied" : "Copy"}
@@ -52,41 +63,49 @@ export function TerminalCard() {
           <Line strong>docker compose up -d</Line>
 
           <div className="space-y-1.5 pt-2 text-xs">
-            <Row name="sqlserver" status="Healthy" ok />
-            {PREVIEW_LABS.map((lab) => (
-              <Row
-                key={lab.id}
-                name={lab.folder.toLowerCase()}
-                status={`:${lab.port}`}
-              />
+            {rows.map((row, i) => (
+              <Row key={row.name} {...row} anim={reveal(i)} />
             ))}
-            <div className="pl-4 text-[11px] text-outline">
+            <div
+              className={`pl-6 text-xs text-muted-foreground ${reveal(rows.length).className}`}
+              style={reveal(rows.length).style}
+            >
               ... 6 more lab services
             </div>
           </div>
 
-          <div className="flex items-center gap-2 border-t border-surface-high pt-3 font-semibold text-primary">
+          <div
+            className={`flex items-center gap-2 border-t border-surface-high pt-3 font-semibold text-primary ${reveal(rows.length + 1).className}`}
+            style={reveal(rows.length + 1).style}
+          >
             <CircleCheck className="size-4" />
             10 vulnerable targets running on localhost
           </div>
         </div>
       </div>
-      <div className="mt-3 flex items-center justify-between px-1 font-mono text-[11px] text-outline">
-        <span>Engine: Docker Compose</span>
-        <span>Runtime: .NET 10</span>
-      </div>
+      <p className="mt-3 px-1 font-mono text-xs text-muted-foreground">
+        Needs Docker Compose. Services run on .NET 10 with SQL Server.
+      </p>
     </div>
   );
 }
 
-function Line({ children, strong }: { children: React.ReactNode; strong?: boolean }) {
+function Line({
+  children,
+  strong,
+}: {
+  children: React.ReactNode;
+  strong?: boolean;
+}) {
   return (
     <div
       className={`flex items-center gap-2 ${
         strong ? "text-foreground" : "text-muted-foreground"
       }`}
     >
-      <span className="font-bold text-primary">$</span>
+      <span aria-hidden className="font-bold text-primary">
+        $
+      </span>
       <span className="whitespace-nowrap">{children}</span>
     </div>
   );
@@ -96,20 +115,25 @@ function Row({
   name,
   status,
   ok,
+  anim,
 }: {
   name: string;
   status: string;
-  ok?: boolean;
+  ok: boolean;
+  anim: { className: string; style: React.CSSProperties };
 }) {
   return (
-    <div className="flex items-center gap-2">
-      <span className="font-bold text-primary">✔</span>
-      <span className="text-outline">Container</span>
+    <div
+      className={`flex items-center gap-2 ${anim.className}`}
+      style={anim.style}
+    >
+      <Check className="size-3.5 shrink-0 text-primary" aria-hidden />
+      <span className="text-muted-foreground">Container</span>
       <span className="whitespace-nowrap">{name}</span>
       <span
-        className={`ml-auto ${ok ? "font-medium text-primary" : "text-tertiary"}`}
+        className={`ml-auto tabular-nums ${ok ? "font-medium text-primary" : "text-tertiary"}`}
       >
-        {ok ? `[${status}]` : status}
+        {status}
       </span>
     </div>
   );
