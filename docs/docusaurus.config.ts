@@ -15,15 +15,17 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://yagizerdem.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "yagizerdem", // Usually your GitHub org/user name.
+  projectName: "OWASP-lab", // Usually your repo name.
+  deploymentBranch: "gh-pages", // Branch for GitHub Pages deployment
 
   onBrokenLinks: "throw",
 
@@ -82,7 +84,7 @@ const config: Config = {
       },
       items: [
         {
-          to: "/docs/introduction",
+          to: "/docs/Introduction",
           label: "Docs",
           position: "left",
         },
