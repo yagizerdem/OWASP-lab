@@ -113,3 +113,50 @@ docker compose down -v     # stop the labs and delete all databases
 If a lab's data gets messy after a few attacks, `docker compose down -v` followed by `docker compose up -d` gives you a fresh, re-seeded database.
 
 :::
+
+## Contributing
+
+Contributions are what make this project better as a learning resource. Fixing a typo, sharpening a lab description, adding a missing secure endpoint, or building a new attack scenario are all welcome.
+
+### Ways to help
+
+- **Report a problem.** Open an [issue](https://github.com/yagizerdem/OWASP-lab/issues) with the lab name, the request you sent, what you expected and what happened.
+- **Fill a gap.** The Injection and Broken Access Control labs only have the vulnerable side so far. A matching `/lab/secure/...` endpoint for each is a great first contribution.
+- **Improve the docs.** Clearer explanations, walkthroughs and root-cause write-ups for any lab.
+
+### Send a change
+
+1. Fork the repository and create a branch from `dev`:
+
+   ```bash
+   git checkout dev
+   git checkout -b feat/short-description
+   ```
+
+2. Make your change and run the affected lab with `docker compose up -d --build <service>` to check that it works.
+3. Commit with a short [conventional message](https://www.conventionalcommits.org/), in the style the history already uses:
+
+   ```text
+   feat(lab): add secure search endpoint to Injection
+   docs: explain the SQL injection root cause
+   ```
+
+4. Push the branch and open a pull request against `dev`. Describe what changed and how you tested it.
+
+### Guidelines for labs
+
+- **One lab, one category.** Keep each lab focused on its OWASP Top 10 category.
+- **Vulnerable and secure side by side.** Put vulnerable routes under `/lab/vulnerable/...` and the fixed version under `/lab/secure/...` so the same payload can be sent to both.
+- **Comment the weakness.** Say in the code why a line is vulnerable, so the source is readable as a lesson.
+- **Seed real data.** Every attack needs something to find. Add dummy data through the lab's `Scripts/DummyData` project and seeders, not by hand.
+- **Stay contained.** Never add real credentials, real hosts or code that reaches outside the lab's own containers.
+
+:::warning
+
+Never copy code from a vulnerable controller into a real project, and never expose these services to the internet.
+
+:::
+
+## Author
+
+Yagiz Erdem
