@@ -55,7 +55,7 @@ The seed files are committed, so the IDs below are the same on every fresh start
 | Second user ID          | `84722c98-d9ce-4263-b5da-f0e4bba12173` |
 | Second account no.      | `5518487640519250` (balance `3574`)    |
 
-To find more IDs, call the `users` endpoint below.
+To find more data, visit the [seed data](https://github.com/yagizerdem/OWASP-lab/tree/main/Lab/BrokenAccessControl/src/Context/Data) in the repository.
 
 ## Response format
 
@@ -94,11 +94,33 @@ Swagger may also list the same IDOR actions under a short alias such as `/IDOR/G
 
 :::
 
-### 1. Login
+## Walkthrough in Swagger
 
-`POST /lab/login` checks an e-mail and password and returns a signed JWT. The token is also set as an HTTP-only `token` cookie.
+In this walkthrough you play **juliana**, an ordinary customer of the bank. Her login details are in the seed data, so you can log in as her. The goal is to see how much you can read and change with nothing but her account, and in the end without logging in at all.
 
-Request body:
+You will also need a second customer to attack. That is **damien_dach**:
+
+| Who         | User ID                                | E-mail                           | Password     | Account no.        | Balance |
+| ----------- | -------------------------------------- | -------------------------------- | ------------ | ------------------ | ------- |
+| juliana     | `d8bdb799-3030-4882-a74e-dfca61771004` | `patience_cummerata@borer.us`    | `pass335598` | `1719307719708282` | `23907` |
+| damien_dach | `84722c98-d9ce-4263-b5da-f0e4bba12173` | `clovis_satterfield@mcclure.biz` | `pass375855` | `5518487640519250` | `3574`  |
+
+### How to send a request in Swagger
+
+Open `http://localhost:5010/swagger`. Every step below follows the same pattern:
+
+1. Find the endpoint in the list and click it to expand it.
+2. Click **Try it out**.
+3. Paste the values from the step into the fields Swagger shows: path parameters such as `userId`, query parameters such as `balance`, or the JSON **Request body**.
+4. Click **Execute** and read the status code and body under **Server response**.
+
+You never need the **Authorize** button. Every endpoint except login answers without any credentials, and that is the whole problem this lab is about.
+
+### Step 1: Log in as juliana
+
+Endpoint: **`POST /lab/login`**
+
+Login is the only endpoint that checks who you are. Paste this into the request body:
 
 ```json
 {
@@ -107,95 +129,200 @@ Request body:
 }
 ```
 
-| Result                     | Status | Message                               |
-| -------------------------- | ------ | ------------------------------------- |
-| Correct credentials        | `200`  | `Login successful`, with `data.token` |
-| Wrong password             | `401`  | `Invalid password or email`           |
-| E-mail that does not exist | `404`  | `Invalid password or email`           |
+You get `200` with `Login successful` and a JWT in `data.token`. The same token is also set as an HTTP-only `token` cookie.
 
-The token is **not required** by any other endpoint. Logging in only shows that a valid identity exists and that the service never uses it.
+```json
+{
+  "message": "Login successful",
+  "data": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+  },
+  "status": 200
+}
+```
 
-### 2. IDOR: accounts by user ID
+You don't need to copy the token. None of the other endpoints read it, so being logged in or not makes no difference to them. Keep that in mind for the rest of the walkthrough.
 
-`GET /lab/vulnerable/idor/user/{userId}` returns every bank account whose `OwnerId` matches the ID in the URL. It never asks who is calling.
+While you are here, try two wrong logins and compare the answers:
 
-### 3. IDOR: account by number
+| Request body                                                      | Status | What it tells an attacker  |
+| ----------------------------------------------------------------- | ------ | -------------------------- |
+| `{ "email": "patience_cummerata@borer.us", "password": "wrong" }` | `401`  | This e-mail is registered. |
+| `{ "email": "nobody@example.com", "password": "wrong" }`          | `404`  | This e-mail is not.        |
 
-`GET /lab/vulnerable/idor/account/{accountNo}` returns the account with that number. Account numbers are 16-digit values, so they can be guessed or collected.
+The message is the same, but the status code gives away which e-mails exist.
 
-### 4 to 6. Customer risk profiles (read)
+### Step 2: Look at your own accounts
 
-The risk profile holds internal staff data that should only be visible to administrators: risk score, KYC status, an internal note and the flag.
+Endpoint: **`GET /lab/vulnerable/idor/user/{userId}`**
 
-- `GET .../customer-risk-profiles` returns all of them.
-- `GET .../customer-risk-profiles/{id}` returns one. An unknown ID still answers `200` with `data: null`.
-- `GET .../customer-risk-profiles/flagged` returns only the profiles with `isFlagged` set to `true`.
+This is the request a banking app would send to show juliana her accounts. Paste juliana's ID into `userId`:
 
-### 7. Change a flag
+```text
+d8bdb799-3030-4882-a74e-dfca61771004
+```
 
-`PUT .../customer-risk-profiles/{id}/flag?isFlagged=true` sets the flag. An unknown ID returns `404` with `Customer risk profile not found`.
+The response lists her one account:
 
-### 8. Delete a risk profile
+```json
+{
+  "message": "Success",
+  "data": [
+    {
+      "accountNumber": "1719307719708282",
+      "balance": 23907.00,
+      "owner": null,
+      "ownerId": "d8bdb799-3030-4882-a74e-dfca61771004",
+      "id": "07801581-dc9d-4e00-88c8-5574688c0c98",
+      ...
+    }
+  ],
+  "status": 200
+}
+```
 
-`DELETE .../customer-risk-profiles/{id}` removes the profile permanently. A second call with the same ID returns `404`.
+Nothing wrong yet. The problem is where the user ID comes from: the URL, which the caller controls.
 
-### 9. List all users
+### Step 3: Read someone else's accounts (IDOR)
 
-`GET .../users` returns every user with `username`, `email` and the **plain-text `password`**. This is the quickest way to collect IDs and credentials for the other requests.
+Same endpoint: **`GET /lab/vulnerable/idor/user/{userId}`**
 
-### 10. Overwrite a balance
+Now replace the ID with damien_dach's:
 
-`PUT .../bank-accounts/{accountNo}/balance?balance=1000000` replaces the balance of any account and returns the updated account. An unknown number returns `404` with `Bank account not found`.
+```text
+84722c98-d9ce-4263-b5da-f0e4bba12173
+```
 
-## Test it from Swagger
+You get damien's account and balance, even though you are juliana, or nobody at all:
 
-1. Open `http://localhost:5010/swagger`.
-2. Expand an endpoint and click **Try it out**.
-3. Fill in the parameters, then click **Execute**.
-4. Read the response body and status code under **Server response**.
+```json
+"accountNumber": "5518487640519250",
+"balance": 3574.00,
+"ownerId": "84722c98-d9ce-4263-b5da-f0e4bba12173"
+```
 
-You do **not** need to log in or click **Authorize**. If an endpoint answers without any credentials, access control is missing.
+This is an **IDOR** (insecure direct object reference). The server looks up whatever ID it receives and never compares it with the person making the request. A correct version would ignore the ID in the URL and take the user ID from the verified token (the `sub` claim), or at least check that `ownerId` matches the caller and answer `403` otherwise.
 
-### Scenario A: read another user's accounts (IDOR)
+### Step 4: Read an account by its number
 
-1. Call **`GET /lab/vulnerable/missing-authorization/users`** and copy the `id` of any user.
-2. Call **`GET /lab/vulnerable/idor/user/{userId}`** and paste that ID into `userId`.
-3. The response lists that user's accounts and balances, although you never proved who you are.
-4. Copy an `accountNumber` from the response and call **`GET /lab/vulnerable/idor/account/{accountNo}`** to read the same account directly.
+Endpoint: **`GET /lab/vulnerable/idor/account/{accountNo}`**
 
-Expected with the seed data: `userId` = `d8bdb799-3030-4882-a74e-dfca61771004` returns account `1719307719708282` with balance `23907`.
+The same flaw, keyed by account number instead of user ID. Paste damien's account number into `accountNo`:
 
-### Scenario B: read internal data (missing authorization)
+```text
+5518487640519250
+```
 
-1. Call **`GET .../customer-risk-profiles`**. You receive all 100 profiles with scores, KYC status and staff notes.
-2. Call **`GET .../customer-risk-profiles/flagged`** to list only the customers flagged for review.
-3. Call **`GET .../users`** and notice that passwords come back in clear text.
+The response is a list with that one account, including its balance and owner ID. Account numbers are 16-digit values that end up on statements and transfer receipts, so they are easy to collect or guess.
 
-### Scenario C: change data you should not touch
+### Step 5: List every user, including passwords
 
-1. Call **`PUT .../bank-accounts/{accountNo}/balance`** with `accountNo` = `1719307719708282` and `balance` = `1000000`. The response shows the new balance.
-2. Call **`GET /lab/vulnerable/idor/account/1719307719708282`** to confirm the change stuck.
-3. Call **`PUT .../customer-risk-profiles/{id}/flag`** with `id` = `7d4720ab-373c-40d9-9960-19a51d19bea0` and `isFlagged` = `false` to clear a flag.
-4. Call **`DELETE .../customer-risk-profiles/{id}`** with the same ID to remove the profile.
+Endpoint: **`GET /lab/vulnerable/missing-authorization/users`**
+
+This one has no parameters. Click **Execute** and you get all 100 users. Search the response for `damien_dach`:
+
+```json
+{
+  "username": "damien_dach",
+  "password": "pass375855",
+  "email": "clovis_satterfield@mcclure.biz",
+  "bankAccounts": [],
+  "id": "84722c98-d9ce-4263-b5da-f0e4bba12173",
+  ...
+}
+```
+
+This is **missing function-level authorization**. A user list is an admin function, but the endpoint never checks for an admin role, or for any login at all. And because passwords are stored in plain text, it hands over every account. To prove it, go back to step 1 and log in as damien:
+
+```json
+{
+  "email": "clovis_satterfield@mcclure.biz",
+  "password": "pass375855"
+}
+```
+
+### Step 6: Read internal risk profiles
+
+Risk profiles are notes that bank staff keep about customers: a risk score, the KYC status, an internal comment and whether the customer is flagged for review. Customers should never see them. Three endpoints hand them out to anyone.
+
+**`GET /lab/vulnerable/missing-authorization/customer-risk-profiles/flagged`** has no parameters. It returns the 29 flagged customers. juliana is one of them:
+
+```json
+{
+  "userId": "d8bdb799-3030-4882-a74e-dfca61771004",
+  "riskScore": 4,
+  "kycStatus": "Pending",
+  "internalNote": "Ipsa quia iste officia non dolorum odio.",
+  "isFlagged": true,
+  "id": "7d4720ab-373c-40d9-9960-19a51d19bea0",
+  ...
+}
+```
+
+**`GET /lab/vulnerable/missing-authorization/customer-risk-profiles/{id}`** returns one profile. Paste damien's profile ID into `id`:
+
+```text
+952abe75-148e-42bd-8f14-de9bccdcf581
+```
+
+You get his risk score `5`, KYC status `Pending` and his internal note. Then try an ID that doesn't exist:
+
+```text
+00000000-0000-0000-0000-000000000000
+```
+
+The answer is still `200`, with `data: null`.
+
+**`GET /lab/vulnerable/missing-authorization/customer-risk-profiles`** returns all 100 profiles at once.
+
+### Step 7: Change someone's balance
+
+Endpoint: **`PUT /lab/vulnerable/missing-authorization/bank-accounts/{accountNo}/balance`**
+
+Give damien a million. Fill in the two fields:
+
+| Field       | Value              |
+| ----------- | ------------------ |
+| `accountNo` | `5518487640519250` |
+| `balance`   | `1000000`          |
+
+The response shows the updated account with `"balance": 1000000` and the message `Bank account balance updated successfully`. Run step 4 again with the same account number to confirm the new balance is stored in the database.
+
+An account number that doesn't exist, such as `0000000000000000`, returns `404` with `Bank account not found`.
+
+### Step 8: Clear a flag and delete a profile
+
+Endpoint: **`PUT /lab/vulnerable/missing-authorization/customer-risk-profiles/{id}/flag`**
+
+Take juliana off the review list. Fill in:
+
+| Field       | Value                                  |
+| ----------- | -------------------------------------- |
+| `id`        | `7d4720ab-373c-40d9-9960-19a51d19bea0` |
+| `isFlagged` | `false`                                |
+
+The response shows her profile with `"isFlagged": false`. Run the `flagged` request from step 6 again: it now returns 28 profiles, and juliana is gone.
+
+Endpoint: **`DELETE /lab/vulnerable/missing-authorization/customer-risk-profiles/{id}`**
+
+Now remove her profile completely. Paste the same ID into `id`:
+
+```text
+7d4720ab-373c-40d9-9960-19a51d19bea0
+```
+
+You get `Customer risk profile deleted successfully`. Click **Execute** again and the answer becomes `404` with `Customer risk profile not found`, because the profile no longer exists.
 
 :::warning
 
-Steps in scenario C change or delete data. To get the original data back, run `docker compose down -v` and then `docker compose up -d`.
+Steps 7 and 8 change and delete data. To get the original seed data back, run `docker compose down -v` and then `docker compose up -d`. This resets the database of every lab, not just this one.
 
 :::
 
-## How to fix it
+## What a fix would look like
 
-There is no secure implementation in the repository yet. A fix would normally:
+There is no secure version of these endpoints in the lab yet, but the fixes are short:
 
-1. Validate the JWT on every request with ASP.NET Core authentication and mark controllers `[Authorize]`.
-2. Take the user ID from the token claims (`sub`), never from the URL or body.
-3. Check ownership before returning or changing a record, and answer `403` or `404` when it does not match.
-4. Restrict admin functions (risk profiles, listing users, changing balances) to an administrator role.
-5. Return DTOs that leave out sensitive fields, and store passwords as salted hashes.
-
-:::warning
-
-This service is intentionally insecure. Run it only on your own machine and never expose it to the internet.
-
-:::
+- **IDOR (steps 2 to 4):** don't trust IDs from the URL for ownership. Read the user ID from the verified JWT and only return accounts whose `ownerId` matches it. Anything else gets `403`.
+- **Missing authorization (steps 5 to 8):** require a valid token on every endpoint (`[Authorize]`) and an admin role on the admin ones (`[Authorize(Roles = "Admin")]`).
+- **Plain-text passwords (step 5):** store only a salted password hash, and never include the password field in any response.
