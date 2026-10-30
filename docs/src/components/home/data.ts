@@ -71,7 +71,7 @@ export const LABS: Lab[] = [
     id: "A07",
     title: "Authentication Failures",
     description:
-      "Brute force attacks, predictable session tokens, missing rate-limits, and token replay vectors.",
+      "User enumeration through login errors, brute force without lockout, and tokens that survive logout.",
     level: "Beginner",
     folder: "AuthenticationFailures",
     port: 5000,
