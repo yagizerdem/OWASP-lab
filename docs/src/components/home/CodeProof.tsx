@@ -1,6 +1,4 @@
 import { Check } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import { Card } from "@/components/ui/card";
 
 const POINTS = [
   "Full source code and git history for every lab",
@@ -10,46 +8,47 @@ const POINTS = [
 
 const kw = "text-primary";
 const str = "text-tertiary";
-const note = "text-outline";
+const note = "text-muted-foreground italic";
 
 export function CodeProof() {
   return (
     <section className="w-full border-y border-surface-highest bg-surface-lowest py-20">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 md:px-10 lg:grid-cols-12">
-        <div className="lg:col-span-5">
-          <h2 className="mb-4 font-display text-3xl font-semibold tracking-[-0.02em] text-foreground">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 md:px-10 lg:grid-cols-12 lg:gap-12">
+        <div className="min-w-0 lg:col-span-5">
+          <h2 className="mb-4 text-balance font-display text-3xl font-semibold tracking-[-0.02em] text-foreground">
             Real code, real vulnerabilities
           </h2>
-          <p className="mb-6 font-mono text-[13px] leading-relaxed text-muted-foreground">
+          <p className="mb-6 max-w-[62ch] font-mono text-[13px] leading-relaxed text-muted-foreground">
             No quizzes and no mock data. Each lab is a normal ASP.NET Core
             service running against a live SQL Server, so what you exploit is
             what you then fix.
           </p>
-          <ul className="space-y-3 font-mono text-xs text-foreground">
+          <ul className="m-0! list-none space-y-3 p-0! font-mono text-xs text-foreground">
             {POINTS.map((point) => (
-              <li key={point} className="flex items-center gap-3">
-                <span className="flex size-5 shrink-0 items-center justify-center rounded bg-primary/10 text-primary">
-                  <Check className="size-3.5" />
-                </span>
+              <li key={point} className="flex items-start gap-3">
+                <Check
+                  aria-hidden
+                  className="mt-0.5 size-4 shrink-0 text-primary"
+                />
                 {point}
               </li>
             ))}
           </ul>
         </div>
 
-        <Card className="gap-0 rounded-xl border border-surface-high bg-surface-container p-6 shadow-xl lg:col-span-7">
-          <div className="mb-3 flex flex-wrap items-center justify-between gap-2 border-b border-surface-highest pb-3">
-            <span className="font-mono text-[11px] text-muted-foreground">
+        <figure className="overflow-hidden rounded-xl border border-surface-high bg-surface-container shadow-[0_12px_32px_-12px_rgba(0,0,0,0.25)] min-w-0 lg:col-span-7">
+          <figcaption className="flex flex-wrap items-center justify-between gap-2 border-b border-surface-highest px-5 py-3 font-mono text-xs">
+            <span className="text-muted-foreground">
               Injection / BlogController.cs
             </span>
-            <Badge className="rounded bg-alert/10 font-mono text-[11px] font-semibold text-alert">
+            <span className="font-semibold text-alert">
               CWE-89: SQL injection
-            </Badge>
-          </div>
+            </span>
+          </figcaption>
           <pre
             tabIndex={0}
             aria-label="Vulnerable and fixed C# search endpoint"
-            className="overflow-x-auto font-mono text-[13px] leading-6 text-foreground"
+            className="overflow-x-auto p-5 font-mono text-[13px] leading-6 text-foreground"
           >
             <code>
               <span className={note}>
@@ -70,7 +69,7 @@ export function CodeProof() {
               {" data = _context.Blogs\n    .Where(b => b.Title.Contains(title))\n    .ToList();"}
             </code>
           </pre>
-        </Card>
+        </figure>
       </div>
     </section>
   );
