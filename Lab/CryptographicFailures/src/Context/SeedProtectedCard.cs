@@ -3,7 +3,7 @@ using Models.Crypto;
 using Models.Entity;
 
 /// <summary>
-/// Seeds encrypted payment cards. The JSON file holds the fake plaintext numbers; they are encrypted through the key ring
+/// Seeds encrypted payment cards. The JSON file holds the fake plaintext numbers; they are encrypted with the card key
 /// at seed time, so no ciphertext and no key is ever committed to the repository.
 /// </summary>
 public class SeedProtectedCard
@@ -15,7 +15,7 @@ public class SeedProtectedCard
   }
 
   /// <summary>Loads <c>Data/dummy.protectedcards.json</c>, encrypts every number with <paramref name="cipher"/> and inserts the rows when the table is empty.</summary>
-  public static void Seed(AppDbContext context, IFieldCipher cipher)
+  public static void Seed(AppDbContext context, ICardCipher cipher)
   {
     if (context.ProtectedCards.Any()) return;
 
@@ -27,7 +27,7 @@ public class SeedProtectedCard
 
     var entities = rows.Select(r =>
     {
-      EncryptedField field = cipher.Encrypt(r.CardNumber);
+      var (nonce, cipherText) = cipher.Encrypt(r.CardNumber);
       return new ProtectedCardEntity
       {
         Id = Guid.NewGuid(),
@@ -35,9 +35,8 @@ public class SeedProtectedCard
         UpdatedAt = DateTime.UtcNow,
         OwnerName = r.OwnerName,
         Last4 = r.CardNumber[^4..],
-        KeyId = field.KeyId,
-        Nonce = field.Nonce,
-        CipherText = field.CipherText
+        Nonce = nonce,
+        CipherText = cipherText
       };
     }).ToList();
 
