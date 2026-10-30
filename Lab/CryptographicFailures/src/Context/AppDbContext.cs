@@ -59,7 +59,6 @@ public class AppDbContext : DbContext
     {
       e.Property(c => c.OwnerName).HasMaxLength(128).IsRequired();
       e.Property(c => c.Last4).HasMaxLength(4).IsRequired();
-      e.Property(c => c.KeyId).HasMaxLength(32).IsRequired();
       e.Property(c => c.Nonce).HasMaxLength(32).IsRequired();
       e.Property(c => c.CipherText).HasMaxLength(256).IsRequired();
       e.HasIndex(c => c.OwnerName);

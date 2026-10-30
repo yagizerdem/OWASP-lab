@@ -1,6 +1,6 @@
 namespace Models.Entity;
 
-/// <summary>Payment card stored the compliant way: AES-256-GCM ciphertext, a nonce and the id of the key that was used.</summary>
+/// <summary>Payment card stored the compliant way: AES-256-GCM ciphertext and its nonce.</summary>
 public class ProtectedCardEntity : BaseEntity
 {
   /// <summary>Card owner.</summary>
@@ -8,9 +8,6 @@ public class ProtectedCardEntity : BaseEntity
 
   /// <summary>Last four digits, kept in clear so lists can be masked without decrypting.</summary>
   public string Last4 { get; set; } = null!;
-
-  /// <summary>Key ring id of the key that encrypted this row (enables key rotation).</summary>
-  public string KeyId { get; set; } = null!;
 
   /// <summary>Base64 GCM nonce, unique per row and per encryption.</summary>
   public string Nonce { get; set; } = null!;

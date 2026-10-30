@@ -104,14 +104,4 @@ File.WriteAllText("dummy.legacycards.json", JsonConvert.SerializeObject(cards.Se
 })));
 File.WriteAllText("dummy.protectedcards.json", JsonConvert.SerializeObject(cards));
 
-// Sample reset tokens: one weak never-expiring code, one expired and one used secure token (stored as SHA-256 hex).
-string Sha256Hex(string s) => Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(s))).ToLowerInvariant();
-var resetTokens = new List<ResetTokenEntity>
-{
-  new() { Id = Guid.NewGuid(), UserName = users[0].UserName, TokenValue = "123456", IssuedSecurely = false },
-  new() { Id = Guid.NewGuid(), UserName = users[1].UserName, TokenValue = Sha256Hex("expired-sample-token"), IssuedSecurely = true, ExpiresAt = DateTime.UtcNow.AddDays(-1) },
-  new() { Id = Guid.NewGuid(), UserName = users[2].UserName, TokenValue = Sha256Hex("used-sample-token"), IssuedSecurely = true, ExpiresAt = DateTime.UtcNow.AddDays(1), UsedAt = DateTime.UtcNow.AddHours(-1) },
-};
-File.WriteAllText("dummy.resettokens.json", JsonConvert.SerializeObject(resetTokens));
-
-Console.WriteLine("Written: dummy.securecredentials.json, dummy.legacycards.json, dummy.protectedcards.json, dummy.resettokens.json. Copy them to Context/Data.");
+Console.WriteLine("Written: dummy.securecredentials.json, dummy.legacycards.json, dummy.protectedcards.json. Copy them to Context/Data.");

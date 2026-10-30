@@ -281,3 +281,17 @@ a[data-slot="button"]:hover,
 a[data-row-link]:hover {
   text-decoration: none;
 }
+
+/* Technology lists in docs: a small logo before each item instead of a bullet. */
+.markdown ul:has(> li > img:first-child) {
+  list-style: none;
+  padding-left: 0;
+}
+
+.markdown li > img:first-child {
+  display: inline-block; /* Tailwind preflight makes img display:block */
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.625rem;
+  vertical-align: -0.2rem;
+}

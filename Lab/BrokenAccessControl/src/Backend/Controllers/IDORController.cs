@@ -3,7 +3,7 @@ using Models.Entity;
 namespace backend.Controllers;
 
 [ApiController]
-[Route("lab/[controller]")]
+[Route("[controller]")]
 public class IDORController : ControllerBase
 {
 
@@ -21,6 +21,7 @@ public class IDORController : ControllerBase
   [HttpGet("GetUserAccountsByUserId/{userId:guid}")]
   [ProducesResponseType(StatusCodes.Status200OK)]
   [ProducesResponseType(StatusCodes.Status403Forbidden)]
+  [Route("/lab/vulnerable/idor/user/{userId:guid}")]
   public async Task<IActionResult> Get([FromRoute] Guid userId)
   {
     List<BankAccountEntity> accounts = _context.BankAccounts.Where(b => b.OwnerId == userId).ToList();
@@ -32,6 +33,7 @@ public class IDORController : ControllerBase
   [HttpGet("GetUserAccountsByAccountNo/{accountNo}")]
   [ProducesResponseType(StatusCodes.Status200OK)]
   [ProducesResponseType(StatusCodes.Status403Forbidden)]
+  [Route("/lab/vulnerable/idor/account/{accountNo}")]
   public async Task<IActionResult> Get([FromRoute] string accountNo)
   {
     List<BankAccountEntity> accounts = _context.BankAccounts.Where(b => b.AccountNumber == accountNo).ToList();

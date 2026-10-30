@@ -82,6 +82,11 @@ const config: Config = {
       },
       items: [
         {
+          to: "/docs/introduction",
+          label: "Docs",
+          position: "left",
+        },
+        {
           href: "https://github.com/yagizerdem/OWASP-lab",
           label: "GitHub",
           position: "right",
