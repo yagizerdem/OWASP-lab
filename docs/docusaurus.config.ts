@@ -92,24 +92,11 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "Project",
           items: [
-            {
-              label: "Tutorial",
-              to: "/docs/intro",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/yagizerdem/OWASP-lab",
             },
           ],
         },

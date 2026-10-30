@@ -1,41 +1,28 @@
 import type { ReactNode } from "react";
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import Heading from "@theme/Heading";
-
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx("hero hero--primary")}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className="">
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
-          >
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+import {
+  CodeProof,
+  FinalCta,
+  Hero,
+  HowItWorks,
+  LabsSection,
+  StackStrip,
+} from "@/components/home";
 
 export default function Home(): ReactNode {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title="Hands-on web app security training"
+      description="Exploit and fix intentionally vulnerable ASP.NET Core labs covering the OWASP Top 10 (2025)."
     >
-      <HomepageHeader />
-      <main>main</main>
+      <main>
+        <Hero />
+        <StackStrip />
+        <LabsSection />
+        <CodeProof />
+        <HowItWorks />
+        <FinalCta />
+      </main>
     </Layout>
   );
 }
