@@ -82,7 +82,7 @@ const config: Config = {
       },
       items: [
         {
-          href: "./docs/introduction",
+          to: "/docs/introduction",
           label: "Docs",
           position: "left",
         },
