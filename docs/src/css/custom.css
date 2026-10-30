@@ -97,74 +97,108 @@
   --docusaurus-highlighted-code-line-bg: rgba(16, 185, 129, 0.1);
 }
 
-/* shadcn/ui tokens, mapped to the same design files */
+/**
+ * shadcn/ui theme tokens, mapped to DESIGN.light.md / DESIGN.dark.md.
+ * Comments name the design token each value comes from.
+ */
 :root {
-  --radius: 0.5rem; /* rounded-lg */
+  --radius: 0.5rem; /* rounded.lg */
+
   --background: #f8f9ff; /* background */
-  --foreground: #181c21; /* on-surface */
+  --foreground: #181c21; /* on-background */
   --card: #ffffff; /* surface-container-lowest */
-  --card-foreground: #181c21;
-  --popover: #ffffff;
-  --popover-foreground: #181c21;
+  --card-foreground: #181c21; /* on-surface */
+  --popover: #ffffff; /* surface-container-lowest */
+  --popover-foreground: #181c21; /* on-surface */
   --primary: #006c49; /* primary */
   --primary-foreground: #ffffff; /* on-primary */
   --secondary: #ebeef5; /* surface-container */
-  --secondary-foreground: #181c21;
+  --secondary-foreground: #181c21; /* on-surface */
   --muted: #f1f3fb; /* surface-container-low */
   --muted-foreground: #3c4a42; /* on-surface-variant */
   --accent: #e5e8f0; /* surface-container-high */
-  --accent-foreground: #181c21;
+  --accent-foreground: #181c21; /* on-surface */
   --destructive: #ba1a1a; /* error */
   --border: #bbcabf; /* outline-variant */
-  --input: #bbcabf;
-  --ring: #006c49;
+  --input: #bbcabf; /* outline-variant */
+  --ring: #006c49; /* primary */
+
   --chart-1: #006c49; /* primary */
   --chart-2: #00668a; /* tertiary */
   --chart-3: #b61722; /* secondary */
   --chart-4: #10b981; /* primary-container */
   --chart-5: #19aee8; /* tertiary-container */
+
   --sidebar: #f1f3fb; /* surface-container-low */
-  --sidebar-foreground: #181c21;
-  --sidebar-primary: #006c49;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #e5e8f0;
-  --sidebar-accent-foreground: #181c21;
-  --sidebar-border: #bbcabf;
-  --sidebar-ring: #006c49;
+  --sidebar-foreground: #181c21; /* on-surface */
+  --sidebar-primary: #006c49; /* primary */
+  --sidebar-primary-foreground: #ffffff; /* on-primary */
+  --sidebar-accent: #e5e8f0; /* surface-container-high */
+  --sidebar-accent-foreground: #181c21; /* on-surface */
+  --sidebar-border: #bbcabf; /* outline-variant */
+  --sidebar-ring: #006c49; /* primary */
 }
 
-[data-theme="dark"] {
+/* Docusaurus switches themes with data-theme; .dark is kept for shadcn tooling. */
+[data-theme="dark"],
+.dark {
   --background: #101419; /* background */
-  --foreground: #e0e2ea; /* on-surface */
+  --foreground: #e0e2ea; /* on-background */
   --card: #181c21; /* surface-container-low */
-  --card-foreground: #e0e2ea;
+  --card-foreground: #e0e2ea; /* on-surface */
   --popover: #1c2025; /* surface-container */
-  --popover-foreground: #e0e2ea;
+  --popover-foreground: #e0e2ea; /* on-surface */
   --primary: #10b981; /* primary-container */
-  --primary-foreground: #0b0f14;
+  --primary-foreground: #0b0f14; /* DESIGN.dark.md primary button text */
   --secondary: #262a30; /* surface-container-high */
-  --secondary-foreground: #e0e2ea;
+  --secondary-foreground: #e0e2ea; /* on-surface */
   --muted: #1c2025; /* surface-container */
   --muted-foreground: #bbcabf; /* on-surface-variant */
   --accent: #262a30; /* surface-container-high */
-  --accent-foreground: #e0e2ea;
-  --destructive: #ef4444; /* Secondary Alert / Vulnerability */
+  --accent-foreground: #e0e2ea; /* on-surface */
+  --destructive: #ef4444; /* DESIGN.dark.md Secondary Alert; white text stays readable */
   --border: #3c4a42; /* outline-variant */
-  --input: #3c4a42;
-  --ring: #10b981;
+  --input: #3c4a42; /* outline-variant */
+  --ring: #10b981; /* primary-container */
+
   --chart-1: #4edea3; /* primary */
   --chart-2: #7bd0ff; /* tertiary */
   --chart-3: #ffb3ad; /* secondary */
   --chart-4: #10b981; /* primary-container */
   --chart-5: #19aee8; /* tertiary-container */
+
   --sidebar: #0a0e13; /* surface-container-lowest */
-  --sidebar-foreground: #e0e2ea;
-  --sidebar-primary: #10b981;
+  --sidebar-foreground: #e0e2ea; /* on-surface */
+  --sidebar-primary: #10b981; /* primary-container */
   --sidebar-primary-foreground: #0b0f14;
-  --sidebar-accent: #262a30;
-  --sidebar-accent-foreground: #e0e2ea;
-  --sidebar-border: #3c4a42;
-  --sidebar-ring: #10b981;
+  --sidebar-accent: #262a30; /* surface-container-high */
+  --sidebar-accent-foreground: #e0e2ea; /* on-surface */
+  --sidebar-border: #3c4a42; /* outline-variant */
+  --sidebar-ring: #10b981; /* primary-container */
+}
+
+/* Extra tokens used by the landing page */
+:root {
+  --surface-lowest: #ffffff; /* surface-container-lowest */
+  --surface-low: #f1f3fb; /* surface-container-low */
+  --surface-container: #ebeef5; /* surface-container */
+  --surface-high: #e5e8f0; /* surface-container-high */
+  --surface-highest: #e0e2ea; /* surface-container-highest */
+  --outline: #6c7a71; /* outline */
+  --tertiary: #00668a; /* tertiary */
+  --alert: #b61722; /* secondary (vulnerability red) */
+}
+
+[data-theme="dark"],
+.dark {
+  --surface-lowest: #0a0e13;
+  --surface-low: #181c21;
+  --surface-container: #1c2025;
+  --surface-high: #262a30;
+  --surface-highest: #31353b;
+  --outline: #86948a;
+  --tertiary: #7bd0ff;
+  --alert: #ffb3ad;
 }
 
 @theme inline {
@@ -203,6 +237,17 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  --font-display: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --color-surface-lowest: var(--surface-lowest);
+  --color-surface-low: var(--surface-low);
+  --color-surface-container: var(--surface-container);
+  --color-surface-high: var(--surface-high);
+  --color-surface-highest: var(--surface-highest);
+  --color-outline: var(--outline);
+  --color-tertiary: var(--tertiary);
+  --color-alert: var(--alert);
 }
 
 @layer base {
