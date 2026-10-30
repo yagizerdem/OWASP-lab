@@ -10,7 +10,7 @@ using Models.DTO;
 using Models.Entity;
 
 [ApiController]
-[Route("lab/[controller]")]
+[Route("[controller]")]
 public class AuthController : ControllerBase
 {
 
@@ -24,7 +24,8 @@ public class AuthController : ControllerBase
     _configuration = configuration;
   }
 
-  [HttpPost("login")]
+  [HttpPost]
+  [Route("/lab/login")]
   public IActionResult Login([FromBody] LoginDto request)
   {
 

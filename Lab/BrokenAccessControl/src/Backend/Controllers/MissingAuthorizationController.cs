@@ -2,7 +2,7 @@ using backend.Services;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("lab/[controller]")]
+[Route("[controller]")]
 public class MissingAuthorizationController : ControllerBase
 {
 
@@ -16,7 +16,8 @@ public class MissingAuthorizationController : ControllerBase
     _configuration = configuration;
   }
 
-  [HttpGet("customer-risk-profiles/{id:guid}")]
+  [HttpGet]
+  [Route("/lab/vulnerable/missing-authorization/customer-risk-profiles/{id:guid}")]
   public IActionResult GetCustomerRiskProfile(Guid id)
   {
     JwtService jwtService = new JwtService(this._configuration);
@@ -36,7 +37,8 @@ public class MissingAuthorizationController : ControllerBase
   /// <summary>
   /// Lists every customer risk profile. No authentication or role check.
   /// </summary>
-  [HttpGet("customer-risk-profiles")]
+  [HttpGet]
+  [Route("/lab/vulnerable/missing-authorization/customer-risk-profiles")]
   public IActionResult GetAllCustomerRiskProfiles()
   {
     var customerRiskProfiles = _context.CustomerRiskProfiles.ToList();
@@ -47,7 +49,8 @@ public class MissingAuthorizationController : ControllerBase
   /// <summary>
   /// Lists only the flagged customers. No authentication or role check.
   /// </summary>
-  [HttpGet("customer-risk-profiles/flagged")]
+  [HttpGet]
+  [Route("/lab/vulnerable/missing-authorization/customer-risk-profiles/flagged")]
   public IActionResult GetFlaggedCustomerRiskProfiles()
   {
     var flaggedProfiles = _context.CustomerRiskProfiles.Where(crp => crp.IsFlagged).ToList();
@@ -58,7 +61,8 @@ public class MissingAuthorizationController : ControllerBase
   /// <summary>
   /// Changes the flag of a customer risk profile. No authentication or role check.
   /// </summary>
-  [HttpPut("customer-risk-profiles/{id:guid}/flag")]
+  [HttpPut]
+  [Route("/lab/vulnerable/missing-authorization/customer-risk-profiles/{id:guid}/flag")]
   public IActionResult SetCustomerRiskProfileFlag(Guid id, [FromQuery] bool isFlagged)
   {
     var customerRiskProfile = _context.CustomerRiskProfiles.FirstOrDefault(crp => crp.Id == id) ??
@@ -74,7 +78,8 @@ public class MissingAuthorizationController : ControllerBase
   /// <summary>
   /// Deletes a customer risk profile. No authentication or role check.
   /// </summary>
-  [HttpDelete("customer-risk-profiles/{id:guid}")]
+  [HttpDelete]
+  [Route("/lab/vulnerable/missing-authorization/customer-risk-profiles/{id:guid}")]
   public IActionResult DeleteCustomerRiskProfile(Guid id)
   {
     var customerRiskProfile = _context.CustomerRiskProfiles.FirstOrDefault(crp => crp.Id == id) ??
@@ -89,7 +94,8 @@ public class MissingAuthorizationController : ControllerBase
   /// <summary>
   /// Lists every user, including the passwords. No authentication or role check.
   /// </summary>
-  [HttpGet("users")]
+  [HttpGet]
+  [Route("/lab/vulnerable/missing-authorization/users")]
   public IActionResult GetAllUsers()
   {
     var users = _context.Users.ToList();
@@ -100,7 +106,8 @@ public class MissingAuthorizationController : ControllerBase
   /// <summary>
   /// Overwrites the balance of any bank account. No authentication or role check.
   /// </summary>
-  [HttpPut("bank-accounts/{accountNo}/balance")]
+  [HttpPut]
+  [Route("/lab/vulnerable/missing-authorization/bank-accounts/{accountNo}/balance")]
   public IActionResult SetBankAccountBalance(string accountNo, [FromQuery] decimal balance)
   {
     var bankAccount = _context.BankAccounts.FirstOrDefault(b => b.AccountNumber == accountNo) ??
